@@ -1,0 +1,6 @@
+..\\Debug\\resources\\Scene&Map\\MapFile2.txt
+1 SOFTLAND 400 470
+1 ELEVATOR 910 390
+1 DOOR 50 440
+2 LADDER 220 590
+2 KEY 700 380

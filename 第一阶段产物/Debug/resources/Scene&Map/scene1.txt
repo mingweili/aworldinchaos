@@ -1,0 +1,6 @@
+..\\Debug\\resources\\Scene&Map\\MapFile1.txt
+1
+1 SOFTLAND 620 220
+1 BOOKESTRADE 55 760
+1 LADDER 900 460
+2 SOFTLAND 620 220

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1256557416 source:d:\游戏\寒假最新成果\mapfile2\main.cpp
+	<iostream>
+	<fstream>
+

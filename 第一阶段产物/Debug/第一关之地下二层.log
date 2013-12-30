@@ -1,0 +1,41 @@
+HGE Started..
+
+HGE version: 1.80
+Date: 25.10.2009, 22:08:34
+
+Application: 第一关之地下二层
+OS: Windows 6.1.7600
+Memory: 1990688K total, 716112K free
+
+D3D Driver: atiu9pag.dll
+Description: Mobile Intel(R) 4 Series Express Chipset Family
+Version: 7.14.1.6029
+Mode: 1280 x 800 x X8R8G8B8
+
+Sound Device: 扬声器 (Conexant 20561 SmartAudio HD)
+Sample rate: 44100
+
+Init done.
+
+resources.res, line 1: Unrecognized resource specificator '//声音资源'.
+resources.res, line 20: Unrecognized resource specificator '//机关资源'.
+resources.res, line 79: Unrecognized resource specificator '//地图背景资源'.
+resources.res, line 169: Unrecognized resource specificator '//小人图片（无用，静态）'.
+resources.res, line 185: Unrecognized resource specificator '//小人动画！'.
+resources.res, line 241: Unrecognized resource specificator '//字体资源'.
+resources.res, line 1: Unrecognized resource specificator '//声音资源'.
+resources.res, line 20: Unrecognized resource specificator '//机关资源'.
+resources.res, line 79: Unrecognized resource specificator '//地图背景资源'.
+resources.res, line 169: Unrecognized resource specificator '//小人图片（无用，静态）'.
+resources.res, line 185: Unrecognized resource specificator '//小人动画！'.
+resources.res, line 241: Unrecognized resource specificator '//字体资源'.
+resources.res, line 1: Unrecognized resource specificator '//声音资源'.
+resources.res, line 20: Unrecognized resource specificator '//机关资源'.
+resources.res, line 79: Unrecognized resource specificator '//地图背景资源'.
+resources.res, line 169: Unrecognized resource specificator '//小人图片（无用，静态）'.
+resources.res, line 185: Unrecognized resource specificator '//小人动画！'.
+resources.res, line 241: Unrecognized resource specificator '//字体资源'.
+Can't load resource: sl
+
+Finishing..
+The End.

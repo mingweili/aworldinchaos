@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1268565833 source:d:\游戏\寒假最新成果—0225\创建地图的程序\mapfile3\main.cpp
+	<iostream>
+	<fstream>
+
+1268650996 source:d:\游戏\游戏最新成果——第四关\创建地图的程序\mapfile3\main.cpp
+	<iostream>
+	<fstream>
+
