@@ -1,6 +1,7 @@
 aworldinchaos
 =============
 
-A world in Chaos, Puzzle Game based on HGE, an open source C++ game engine
+A World in Chaos, puzzle game
 
-Time created：May 2010
+Language: C++
+Keywords: HGE, original game, puzzle game, game design
