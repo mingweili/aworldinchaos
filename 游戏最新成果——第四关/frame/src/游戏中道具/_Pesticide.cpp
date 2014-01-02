@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·ÖÐµÀ¾ß\\_Pesticide.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­é“å…·\\_Pesticide.h"
 
 _Pesticide :: _Pesticide()
 	: PushingTime(0), KillWorm(0)
@@ -11,13 +11,13 @@ void _Pesticide :: logic(Player* player, DoohSpecies* map)
 {
 	float mouse_x, mouse_y = 0;
 	hge->Input_GetMousePos(&mouse_x, &mouse_y);
-	//Èç¹û°´×Å×ó¼ü£¬ÇÒÅçµÄµØ·½Î»ÓÚ³æ×ÓµÄÇøÓò£¬Ôò´ú±íÕýÔÚÉ±³æ
+	//ÃˆÃ§Â¹Ã»Â°Â´Ã—Ã…Ã—Ã³Â¼Ã¼Â£Â¬Ã‡Ã’Ã…Ã§ÂµÃ„ÂµÃ˜Â·Â½ÃŽÂ»Ã“ÃšÂ³Ã¦Ã—Ã“ÂµÃ„Ã‡Ã¸Ã“Ã²Â£Â¬Ã”Ã²Â´ÃºÂ±Ã­Ã•Ã½Ã”ÃšÃ‰Â±Â³Ã¦
 	if(hge -> Input_GetKeyState(HGEK_LBUTTON) && mouse_x >= 407 && mouse_x <= 593 && mouse_y >= 0 && mouse_y <= 440)
 	{
 		PushingTime += hge->Timer_GetDelta();
-		//×öÉ±³æµÄäÖÈ¾
+		//Ã—Ã¶Ã‰Â±Â³Ã¦ÂµÃ„Ã¤Ã–ÃˆÂ¾
 
-		//Èç¹ûÕýÔÚ¶Ô×Å¹×²Ä²»Í£µØÅç£¬²¢ÇÒÅçµÄÊ±¼ä×ã¹»³¤ÁË
+		//ÃˆÃ§Â¹Ã»Ã•Ã½Ã”ÃšÂ¶Ã”Ã—Ã…Â¹Ã—Â²Ã„Â²Â»ÃÂ£ÂµÃ˜Ã…Ã§Â£Â¬Â²Â¢Ã‡Ã’Ã…Ã§ÂµÃ„ÃŠÂ±Â¼Ã¤Ã—Ã£Â¹Â»Â³Â¤ÃÃ‹
 		if(PushingTime >= 1.5)
 			KillWorm = true;
 	}

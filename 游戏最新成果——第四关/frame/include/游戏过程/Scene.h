@@ -1,13 +1,13 @@
-#ifndef SCENE_H
+ï»¿#ifndef SCENE_H
 #define SCENE_H
 
-#include "..\\×ÊÔ´¹ÜÀí\\ResourceManager.h"
-#include "..\\ÕË»§\\Account.h"
+#include "..\\èµ„æºç®¡ç†\\ResourceManager.h"
+#include "..\\è´¦æˆ·\\Account.h"
 
 #include "Dimensionality.h"
-#include "..\\Î¬¶È×ª»»\\BackGround1.h"
-#include "..\\Î¬¶È×ª»»\\BackGround3.h"
-#include "..\\Î¬¶È×ª»»\\BackGround4.h"
+#include "..\\ç»´åº¦è½¬æ¢\\BackGround1.h"
+#include "..\\ç»´åº¦è½¬æ¢\\BackGround3.h"
+#include "..\\ç»´åº¦è½¬æ¢\\BackGround4.h"
 
 enum SceneState{NORMAL, TRANSFORM, PASS};
 
@@ -17,36 +17,36 @@ bool RenderFunc_scene();
 class Scene
 {	
 public :
-	static Scene* getScene(unsigned int = 0);							//µ¥ÀıÄ£Ê½£¬µÃµ½³¡¾°¶ÔÏó
+	static Scene* getScene(unsigned int = 0);							//ÂµÂ¥Ã€Ã½Ã„Â£ÃŠÂ½Â£Â¬ÂµÃƒÂµÂ½Â³Â¡Â¾Â°Â¶Ã”ÃÃ³
 
-	inline Dimensionality* getDimenNow() const { return DimenNow; };    //È¡µÃµ±Ç°Î¬¶È
+	inline Dimensionality* getDimenNow() const { return DimenNow; };    //ÃˆÂ¡ÂµÃƒÂµÂ±Ã‡Â°ÃÂ¬Â¶Ãˆ
 
-	inline SceneState getState() const { return state; };				//È¡µÃ³¡¾°µÄ×´Ì¬
+	inline SceneState getState() const { return state; };				//ÃˆÂ¡ÂµÃƒÂ³Â¡Â¾Â°ÂµÃ„Ã—Â´ÃŒÂ¬
 
-	inline void setState( SceneState _state ) { state = _state; };		//ÉèÖÃ³¡¾°µÄ×´Ì¬
+	inline void setState( SceneState _state ) { state = _state; };		//Ã‰Ã¨Ã–ÃƒÂ³Â¡Â¾Â°ÂµÃ„Ã—Â´ÃŒÂ¬
 
-	void TransformJudge( Player* );										//ÅĞ¶ÏÊó±êÊÖÊÆ
+	void TransformJudge( Player* );										//Ã…ÃÂ¶ÃÃŠÃ³Â±ÃªÃŠÃ–ÃŠÃ†
 
-	BackGround* background;												//Î¬¶È×ª»¯µÄÀà¾ä±ú
+	BackGround* background;												//ÃÂ¬Â¶ÃˆÃ—ÂªÂ»Â¯ÂµÃ„Ã€Ã Â¾Ã¤Â±Ãº
 
 	hgeFont* getFont();
 
-	int getDimenNOWID();												//È¡µÃµ±Ç°Î¬¶ÈµÄ±àºÅ
+	int getDimenNOWID();												//ÃˆÂ¡ÂµÃƒÂµÂ±Ã‡Â°ÃÂ¬Â¶ÃˆÂµÃ„Â±Ã ÂºÃ…
 
 private :
 	static Scene* instance;
-	Scene(unsigned int = 0);                                      //¹¹Ôìº¯Êı£¬³õÊ¼»¯³¡¾°¼°Î¬¶È¡¢»ú¹Ø
-	void initialize();                                                  //¾ßÌåµÄ³õÊ¼»¯º¯Êı
+	Scene(unsigned int = 0);                                      //Â¹Â¹Ã”Ã¬ÂºÂ¯ÃŠÃ½Â£Â¬Â³ÃµÃŠÂ¼Â»Â¯Â³Â¡Â¾Â°Â¼Â°ÃÂ¬Â¶ÃˆÂ¡Â¢Â»ÃºÂ¹Ã˜
+	void initialize();                                                  //Â¾ÃŸÃŒÃ¥ÂµÃ„Â³ÃµÃŠÂ¼Â»Â¯ÂºÂ¯ÃŠÃ½
 
-	static unsigned int scene_id;										//ÓÃÀ´¼ÇÂ¼¸Ã³¡¾°µÄ×ª»»·½Ê½
+	static unsigned int scene_id;										//Ã“ÃƒÃ€Â´Â¼Ã‡Ã‚Â¼Â¸ÃƒÂ³Â¡Â¾Â°ÂµÃ„Ã—ÂªÂ»Â»Â·Â½ÃŠÂ½
 
-	int DimenQuantity;													//Î¬¶ÈµÄÊıÁ¿
-	Dimensionality* dimens[10];											//´æ·ÅÎ¬¶ÈÖ¸ÕëµÄÊı×é
-	Dimensionality* DimenNow;											//´æ·Åµ±Ç°µÄÎ¬¶È
+	int DimenQuantity;													//ÃÂ¬Â¶ÃˆÂµÃ„ÃŠÃ½ÃÂ¿
+	Dimensionality* dimens[10];											//Â´Ã¦Â·Ã…ÃÂ¬Â¶ÃˆÃ–Â¸Ã•Ã«ÂµÃ„ÃŠÃ½Ã—Ã©
+	Dimensionality* DimenNow;											//Â´Ã¦Â·Ã…ÂµÂ±Ã‡Â°ÂµÃ„ÃÂ¬Â¶Ãˆ
 
-	MapCal* aMapCal;													//³¡¾°¶ÔÓ¦µÄĞéÄâµØÍ¼Àà
+	MapCal* aMapCal;													//Â³Â¡Â¾Â°Â¶Ã”Ã“Â¦ÂµÃ„ÃÃ©Ã„Ã¢ÂµÃ˜ÃÂ¼Ã€Ã 
 	
-	SceneState state;													//³¡¾°µÄ×´Ì¬
+	SceneState state;													//Â³Â¡Â¾Â°ÂµÃ„Ã—Â´ÃŒÂ¬
 
 	hgeFont* fnt;
 };

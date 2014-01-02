@@ -1,4 +1,4 @@
-#include "..\\..\\include\\��Ϸ�л���\\Water.h"
+﻿#include "..\\..\\include\\游戏中机关\\Water.h"
 
 Water :: Water(float _x, float _y)
 {
@@ -24,7 +24,7 @@ GameState Water :: logic(Player* player, DoohSpecies* map)
 {
 	static float time = 0;
 
-	//�ж�С���Ƿ���ˮ�ε��±�
+	//ÅÐ¶ÏÐ¡ÈËÊÇ·ñÔÚË®µÎµÄÏÂ±ß
 	float player_x = player -> getX();
 	float player_y = player -> getY();
 	_Cask* theCask = (_Cask*)Account :: getAccount() -> getProperty(_CASK);

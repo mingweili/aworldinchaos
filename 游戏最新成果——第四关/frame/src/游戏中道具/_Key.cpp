@@ -1,4 +1,4 @@
-#include "..\\..\\include\\сно╥жп╣ю╬ъ\\_Key.h"
+О╩©#include "..\\..\\include\\Ф╦╦Ф┬▐Д╦╜И│⌠Е┘╥\\_Key.h"
 
 _Key :: _Key()
 {

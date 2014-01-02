@@ -1,4 +1,4 @@
-#include "..\\..\\include\\Ö÷Ìå\\GameInitialize.h"
+ï»¿#include "..\\..\\include\\ä¸»ä½“\\GameInitialize.h"
 
 HGE* hge = hgeCreate(HGE_VERSION);
 

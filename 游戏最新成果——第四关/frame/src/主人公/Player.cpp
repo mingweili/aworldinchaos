@@ -1,4 +1,4 @@
-#include "..\\..\\include\\���˹�\\Player.h"
+﻿#include "..\\..\\include\\主人公\\Player.h"
 
 //PLAYERHEIGHT = 80;
 //PLAYERWIDTH = 60;
@@ -15,13 +15,13 @@ Player :: Player()
 	: dx(0), dy(0),
 	  SpeedX(0), SpeedY(0), state(WALKING),
 	  anima_currentstate(WALKING), facepoint(1), 
-	  super(true) // ���ҽ�ά��ת����������ʼΪtrue�����Է���
+	  super(true) // ÔÝÇÒ½«Î¬¶È×ª»¯µÄÄÜÁ¦³õÊ¼Îªtrue£¬µ÷ÊÔ·½±ã
 {
-	//������ʼ��
+	//ÉùÒô³õÊ¼»¯
 	ShoutSound = ResourceManager :: getEffect("shout");
 	YellSound = ResourceManager :: getEffect("yell");
 
-	//������ʼ��
+	//¶¯»­³õÊ¼»¯
 	anima = ResourceManager :: getAnimation("walk");
 	anima_walk = ResourceManager :: getAnimation("walk");
 	anima_fall = ResourceManager :: getAnimation("fall");
@@ -52,7 +52,7 @@ Player* Player :: getPlayer(unsigned int _level_id)
 			y = 410;
 			break;
 		case 3 :
-			//����ǵ����صĻ�����С�˵ĳ�����С����С�˵Ķ�����С
+			//Èç¹ûÊÇµÚÈý¹ØµÄ»°£¬½«Ð¡ÈËµÄ³¤¿í¸ÄÐ¡£¬½«Ð¡ÈËµÄ¶¯»­¸ÄÐ¡
 			height = 62;
 			width = 46;
 			x = 300;
@@ -119,7 +119,7 @@ void Player :: UpdatePos(float dt)
 		anima->Update(0.01f);
 	}
 
-	//������ڵ�״̬ʱ�궴
+	//Èç¹ûÏÖÔÚµÄ×´Ì¬Ê±×ê¶´
 	else if(state == DRILL)
 	{
 		anima = anima_climb;
@@ -129,7 +129,7 @@ void Player :: UpdatePos(float dt)
 		if(time > 0 && time <= 1)
 		{
 			DWORD color = anima -> GetColor();
-			//��ȡ���������ʱ��ȡ��ʼ��ɫRGB
+			//»ñÈ¡³õÈë¸ÃÌõ¼þÊ±»ñÈ¡³õÊ¼ÑÕÉ«RGB
 			static DWORD R = GETR(color);
 			static DWORD G = GETG(color);
 			static DWORD B = GETB(color);
@@ -145,7 +145,7 @@ void Player :: UpdatePos(float dt)
 		else if(time > 1 && time <= 2)
 		{
 			DWORD color = anima -> GetColor();
-			//��ȡ���������ʱ��ȡ��ʼ��ɫRGB
+			//»ñÈ¡³õÈë¸ÃÌõ¼þÊ±»ñÈ¡³õÊ¼ÑÕÉ«RGB
 			static DWORD R = GETR(color);
 			static DWORD G = GETG(color);
 			static DWORD B = GETB(color);
@@ -176,7 +176,7 @@ void Player :: UpdatePos(float dt)
 	y += dy;
 	y = floor(y);
 
-	//����ʱ��ôд���Ժ���β�ͬ�ˣ�������Ӧ�ı�
+	//ÏÈÔÝÊ±ÕâÃ´Ð´£¬ÒÔºóµØÐÎ²»Í¬ÁË£¬ÔÙ×öÏàÓ¦¸Ä±ä
 	if(y >= 755)
 		y = 755;
 
@@ -185,6 +185,6 @@ void Player :: UpdatePos(float dt)
 
 void Player :: render()
 {
-	//�Ժ��ٴ������Ƿ��ж���ʲô��
+	//ÒÔºóÔÙ´ËÌÖÂÛÊÇ·ñÓÐ¶¯»­Ê²Ã´µÄ
 	anima -> RenderEx(x, y, 0, (float)1.3*facepoint, 1.3);
 }

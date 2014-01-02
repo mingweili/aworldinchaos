@@ -1,9 +1,9 @@
-#include "..\\..\\include\\ÓÎÏ·ÖĞ»ú¹Ø\\Tortoise.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­æœºå…³\\Tortoise.h"
 #include <stdlib.h>
 
 Tortoise :: Tortoise(float _x, float _y)
 {
-	//ÓÃ_x±íÊ¾ËùÔÚµÄÎ¬¶È£¬_y±íÊ¾x¼°yµÄÖµ
+	//Ã“Ãƒ_xÂ±Ã­ÃŠÂ¾Ã‹Ã¹Ã”ÃšÂµÃ„ÃÂ¬Â¶ÃˆÂ£Â¬_yÂ±Ã­ÃŠÂ¾xÂ¼Â°yÂµÃ„Ã–Âµ
 	x = y = _y;
 	DimenId = _x;
 
@@ -39,7 +39,7 @@ GameState Tortoise :: logic(Player* player, DoohSpecies* map)
 		&& abs(mouse_x - x) <= TORTOISE_WIDTH / 2 && abs(mouse_y - y) <= TORTOISE_HEIGHT / 2
 	  )
 	{
-		//ËµÃ÷ÓÃ»§È¡µÃÁËÒ»¸öĞ¡ÎÚ¹ê
+		//Ã‹ÂµÃƒÃ·Ã“ÃƒÂ»Â§ÃˆÂ¡ÂµÃƒÃÃ‹Ã’Â»Â¸Ã¶ÃÂ¡ÃÃšÂ¹Ãª
 		switch(DimenId)
 		{
 		case 1 :
@@ -58,7 +58,7 @@ GameState Tortoise :: logic(Player* player, DoohSpecies* map)
 		DoohickeyState = DONE;
 	}
 
-	//¸üĞÂĞ¡ÎÚ¹êµÄÎ»ÖÃ
+	//Â¸Ã¼ÃÃ‚ÃÂ¡ÃÃšÂ¹ÃªÂµÃ„ÃÂ»Ã–Ãƒ
 	x += dx;
 	y += dy;
 
@@ -89,19 +89,19 @@ GameState Tortoise :: logic(Player* player, DoohSpecies* map)
 		int turn = (int)rand() % 4;
 		switch(turn)
 		{
-		case 0 ://ÏòÉÏ×ß
+		case 0 ://ÃÃ²Ã‰ÃÃ—ÃŸ
 			dx = 0;
 			dy= -3;
 			break;
-		case 1 : //ÏòÏÂ×ß
+		case 1 : //ÃÃ²ÃÃ‚Ã—ÃŸ
 			dx = 0;
 			dy = 3;
 			break;
-		case 2 : //Ïò×ó×ß
+		case 2 : //ÃÃ²Ã—Ã³Ã—ÃŸ
 			dx = -3;
 			dy = 0;
 			break;
-		case 3 : //ÏòÓÒ×ß
+		case 3 : //ÃÃ²Ã“Ã’Ã—ÃŸ
 			dx = 3;
 			dy = 0;
 			break;

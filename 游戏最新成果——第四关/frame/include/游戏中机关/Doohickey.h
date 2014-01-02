@@ -1,8 +1,8 @@
-#ifndef DOOHICKEY_H
+ï»¿#ifndef DOOHICKEY_H
 #define DOOHICKEY_H
 
-#include "..\\ÎïÀí¼ÆËã\\MapCal.h"
-#include "..\\ÕË»§\\Account.h"
+#include "..\\ç‰©ç†è®¡ç®—\\MapCal.h"
+#include "..\\è´¦æˆ·\\Account.h"
 
 enum state{INACTIVE = 0, ACTIVE, DONE};
 
@@ -30,8 +30,8 @@ protected :
 
 	state DoohickeyState;
 
-	hgeSprite* sprite;//´Ë´¦ÔİÇÒ·ÅÖÃÒ»¸ö¸ºÔğÌùÍ¼µÄ¾«Áé
-	HEFFECT sound;//´Ë´¦ÔİÇÒ·ÅÖÃÒ»¸öÓÃÓÚÉùÒô²¥·ÅµÄ¾ä±ú£¬Ó¦¸ÃÃ¿¸ö»ú¹Ø¶¼ÓĞ°É
+	hgeSprite* sprite;//Â´Ã‹Â´Â¦Ã”ÃÃ‡Ã’Â·Ã…Ã–ÃƒÃ’Â»Â¸Ã¶Â¸ÂºÃ”Ã°ÃŒÃ¹ÃÂ¼ÂµÃ„Â¾Â«ÃÃ©
+	HEFFECT sound;//Â´Ã‹Â´Â¦Ã”ÃÃ‡Ã’Â·Ã…Ã–ÃƒÃ’Â»Â¸Ã¶Ã“ÃƒÃ“ÃšÃ‰Ã¹Ã’Ã´Â²Â¥Â·Ã…ÂµÃ„Â¾Ã¤Â±ÃºÂ£Â¬Ã“Â¦Â¸ÃƒÃƒÂ¿Â¸Ã¶Â»ÃºÂ¹Ã˜Â¶Â¼Ã“ÃÂ°Ã‰
 };
 
 #endif

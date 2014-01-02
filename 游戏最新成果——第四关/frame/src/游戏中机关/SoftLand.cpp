@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·ÖĞ»ú¹Ø\\SoftLand.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­æœºå…³\\SoftLand.h"
 
 SoftLand :: SoftLand(float _x, float _y)
 	: times_passed(0)
@@ -11,7 +11,7 @@ SoftLand :: SoftLand(float _x, float _y)
 
 	DoohickeyState = INACTIVE;
 
-	sprite = ResourceManager :: getSpritePtr("SoftLand");//ÔİÊ±ÕâÃ´Ğ´£¬È¡µÃÌùÍ¼
+	sprite = ResourceManager :: getSpritePtr("SoftLand");//Ã”ÃÃŠÂ±Ã•Ã¢ÃƒÂ´ÃÂ´Â£Â¬ÃˆÂ¡ÂµÃƒÃŒÃ¹ÃÂ¼
 	sprite -> SetZ(0.8f);
 }
 
@@ -39,7 +39,7 @@ GameState SoftLand :: logic(Player* player, DoohSpecies* map)
 	float foot_x_right = foot_x_center + 5;
 	float foot_y_right = foot_y_center;
 
-	//Ğ¡ÈË½ÅÏÂÈı¸öÎ»ÖÃµÄÊôĞÔ
+	//ÃÂ¡ÃˆÃ‹Â½Ã…ÃÃ‚ÃˆÃ½Â¸Ã¶ÃÂ»Ã–ÃƒÂµÃ„ÃŠÃ´ÃÃ”
 	DoohSpecies species_center = map[(int) (foot_x_center + MAPPOINTQUANTITY_X * foot_y_center)];
 	DoohSpecies species_left = map[(int) (foot_x_left + MAPPOINTQUANTITY_X * foot_y_left)];
 	DoohSpecies species_right = map[(int) (foot_x_right + MAPPOINTQUANTITY_X * foot_y_right)];

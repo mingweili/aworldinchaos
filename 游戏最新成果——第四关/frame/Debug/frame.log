@@ -1,0 +1,70 @@
+﻿Build started 1/2/2014 5:08:01 PM.
+     1>Project "D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\frame\frame.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\混沌的世界—寒假最新成果.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         G:\Programming\Visual Studio 2010\VC\bin\CL.exe /c /IC:\Users\Chandler\Desktop\hge181\include /ZI /nologo- /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "src\主体\GameInitialize.cpp"
+         Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         cl /c /IC:\Users\Chandler\Desktop\hge181\include /ZI /nologo- /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "src\主体\GameInitialize.cpp"
+     1>cl : Command line warning D9035: option 'nologo-' has been deprecated and will be removed in a future release
+         
+         GameInitialize.cpp
+     1>d:\codes\archives\a world in chaos\游戏最新成果——第四关\frame\src\主体\gameinitialize.cpp(28): warning C4101: 'a' : unreferenced local variable
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         G:\Programming\Visual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\Debug\混沌的世界—寒假最新成果.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Chandler\Desktop\hge181\lib\vc hge.lib hgehelp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBC.lib /MANIFEST /ManifestFile:"Debug\混沌的世界—寒假最新成果.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\Debug\混沌的世界—寒假最新成果.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\Debug\混沌的世界—寒假最新成果.lib" /MACHINE:X86 "Debug\混沌的世界—寒假最新成果.exe.embed.manifest.res"
+         Debug\_Cask.obj
+         Debug\_Tortoise1.obj
+         Debug\_Tortoise2.obj
+         Debug\_Tortoise3.obj
+         Debug\_Tortoise4.obj
+         Debug\BackGround4.obj
+         Debug\Cave.obj
+         Debug\Killer.obj
+         Debug\Pearl.obj
+         Debug\Seed.obj
+         Debug\Tortoise.obj
+         Debug\Water.obj
+         Debug\HDGUIButton.obj
+         Debug\Menu.obj
+         Debug\MapCal.obj
+         Debug\phsical.obj
+         Debug\BookEstrade.obj
+         Debug\CaskFragment.obj
+         Debug\Coffin.obj
+         Debug\Door.obj
+         Debug\Elevator.obj
+         Debug\Key.obj
+         Debug\Ladder.obj
+         Debug\MobileLadder.obj
+         Debug\Pesticide.obj
+         Debug\SoftLand.obj
+         Debug\BackGround1.obj
+         Debug\BackGround3.obj
+         Debug\_Key.obj
+         Debug\_MobileLadder.obj
+         Debug\_Pesticide.obj
+         Debug\dimensionality.obj
+         Debug\Scene.obj
+         Debug\ResourceManager.obj
+         Debug\Player.obj
+         Debug\GameInitialize.obj
+         Debug\main.obj
+         Debug\Account.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\混沌的世界—寒假最新成果.exe.embed.manifest" /manifest "Debug\混沌的世界—寒假最新成果.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         frame.vcxproj -> D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\Debug\混沌的世界—寒假最新成果.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\混沌的世界—寒假最新成果.unsuccessfulbuild".
+         Touching "Debug\混沌的世界—寒假最新成果.lastbuildstate".
+     1>Done Building Project "D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\frame\frame.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.90

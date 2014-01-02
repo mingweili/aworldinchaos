@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ีหปง\\Account.h"
+๏ปฟ#include "..\\..\\include\\่ดฆๆท\\Account.h"
 
 Account* Account :: instance = NULL;
 int Account :: level_id = 0;
@@ -29,7 +29,7 @@ void Account :: getDataFromFile()
 	string str = "";
 	while(AccountFile >> str)
 	{
-		//ศ๔ธษตภพ฿ฃฌศ๔ธรำรปงำะฤณธ๖ตภพ฿ฃฌพอะยฝจาปธ๖ฃฌฮ๐อüฤพอฐ
+		//รรดยธรยตร€ยพรยฃยฌรรดยธรร“รยปยงร“รรยณยธรถยตร€ยพรยฃยฌยพรรรยฝยจร’ยปยธรถยฃยฌรรฐรรผรยพรยฐ
 		if(str == "_KEY")
 			properties[_KEY] = new _Key();
 		else if(str == "_PESTICIDE")
@@ -89,7 +89,7 @@ void Account :: AddProperty(PropertyName name)
 		properties[name] = new _Tortoise4();
 		break;
 
-	//ตศตศฃฌสวาปะฉตภพ฿
+	//ยตรยตรยฃยฌรรร’ยปรยฉยตร€ยพร
 	}
 }
 

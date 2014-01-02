@@ -1,11 +1,11 @@
-#include "..\\..\\include\\Ö÷Ìå\\GameInitialize.h"
+ï»¿#include "..\\..\\include\\ä¸»ä½“\\GameInitialize.h"
 
 void GameInitialize()
 {
 
-	//ÉèÖÃ³õÊ¼Öµ
+	//Ã‰Ã¨Ã–ÃƒÂ³ÃµÃŠÂ¼Ã–Âµ
 	hge = hgeCreate(HGE_VERSION);
-	hge->System_SetState(HGE_LOGFILE,         "»ìãçµÄÊÀ½ç__³ÌÐòÈÕÖ¾.log");
+	hge->System_SetState(HGE_LOGFILE,         "log.log");
 	hge->System_SetState(HGE_FPS,             50);
 	hge->System_SetState(HGE_WINDOWED,        false);
 	hge->System_SetState(HGE_HIDEMOUSE,       false);
@@ -14,49 +14,49 @@ void GameInitialize()
 	hge->System_SetState(HGE_SCREENBPP,       32);
 	hge->System_SetState(HGE_ZBUFFER,         true);
 
-	//´ÓÎÄ¼þÖÐ¶Á³öÉÏÒ»´ÎÍæÓÎÏ·Ê±µÄ´æµµ
-	//Èç¹ûÉÏ´ÎÓÐ´æµµ£¬ÔòÖ±½Ó½øÈëÖ÷²Ëµ¥
+	//Â´Ã“ÃŽÃ„Â¼Ã¾Ã–ÃÂ¶ÃÂ³Ã¶Ã‰ÃÃ’Â»Â´ÃŽÃÃ¦Ã“ÃŽÃÂ·ÃŠÂ±ÂµÃ„Â´Ã¦ÂµÂµ
+	//ÃˆÃ§Â¹Ã»Ã‰ÃÂ´ÃŽÃ“ÃÂ´Ã¦ÂµÂµÂ£Â¬Ã”Ã²Ã–Â±Â½Ã“Â½Ã¸ÃˆÃ«Ã–Ã·Â²Ã‹ÂµÂ¥
 	if(InitializeFromFile())
 	{
-		//ÔÚ³õÊ¼»¯µÄÊ±ºò½«Á½¸öº¯ÊýÉè¶¨ÎªÖ÷²Ëµ¥º¯Êý
+		//Ã”ÃšÂ³ÃµÃŠÂ¼Â»Â¯ÂµÃ„ÃŠÂ±ÂºÃ²Â½Â«ÃÂ½Â¸Ã¶ÂºÂ¯ÃŠÃ½Ã‰Ã¨Â¶Â¨ÃŽÂªÃ–Ã·Â²Ã‹ÂµÂ¥ÂºÂ¯ÃŠÃ½
 		hge->System_SetState(HGE_RENDERFUNC, RenderFunc_menu);
 		hge->System_SetState(HGE_FRAMEFUNC, FrameFunc_menu);
 	}
 	else  
 	{
-		//³öÏÖÐÂ½¨ÓÃ»§µÄ´°¿Ú£¬½«ÐÂ½¨µÄÓÃ»§´æÈëGameInfo.txtÖÐ
+		//Â³Ã¶ÃÃ–ÃÃ‚Â½Â¨Ã“ÃƒÂ»Â§ÂµÃ„Â´Â°Â¿ÃšÂ£Â¬Â½Â«ÃÃ‚Â½Â¨ÂµÃ„Ã“ÃƒÂ»Â§Â´Ã¦ÃˆÃ«GameInfo.txtÃ–Ã
 		int a;
 	}
 
 	if(hge->System_Initiate()) 
 	{
-		//³õÊ¼»¯×ÊÔ´¹ÜÀíÆ÷£¬¼ÓÔØ×ÊÔ´
+		//Â³ÃµÃŠÂ¼Â»Â¯èµ„æºç®¡ç†Ã†Ã·Â£Â¬Â¼Ã“Ã”Ã˜Ã—ÃŠÃ”Â´
 		hge -> Resource_Load("resources.res");
 
-		//¿ªÊ¼ÓÎÏ·µÄäÖÈ¾£¬³öÏÖ»­Ãæ
+		//Â¿ÂªÃŠÂ¼Ã“ÃŽÃÂ·ÂµÃ„Ã¤Ã–ÃˆÂ¾Â£Â¬Â³Ã¶ÃÃ–Â»Â­ÃƒÃ¦
 		hge -> System_Start();
 	}
 	else
 	{
 		MessageBox(NULL, "Game can't be initialized successful", "WARNING", MB_OK);
-		exit(1);//ÒÔºó³¢ÊÔÓÃÒì³£´¦Àí
+		exit(1);//Ã’Ã”ÂºÃ³Â³Â¢ÃŠÃ”Ã“ÃƒÃ’Ã¬Â³Â£Â´Â¦Ã€Ã­
 	}
 }
 
 bool InitializeFromFile()
 {
 
-	ifstream GameInfo("D:\\GameInfo.txt"/*ÔÝÊ±ÕâÃ´Ð´*/, ios :: in);
+	ifstream GameInfo("D:\\GameInfo.txt", ios :: in);
 
 	if(GameInfo)
 	{
 
-		//»ñÈ¡ÉÏÒ»¸öÓÃ»§µ±×öÄ¬ÈÏÓÃ»§
+		//Â»Ã±ÃˆÂ¡Ã‰ÃÃ’Â»Â¸Ã¶Ã“ÃƒÂ»Â§ÂµÂ±Ã—Ã¶Ã„Â¬ÃˆÃÃ“ÃƒÂ»Â§
 		string CurrentPlayerName;
 		GameInfo >> CurrentPlayerName;
 		Account* AccountNow = Account :: getAccount(CurrentPlayerName);
 
-		//»ñÈ¡ÓÃ»§ÁÐ±í
+		//Â»Ã±ÃˆÂ¡Ã“ÃƒÂ»Â§ÃÃÂ±Ã­
 		string* PlayerList = new string;
 		int index = -1;
 		while(GameInfo >> PlayerList[++index]);

@@ -1,4 +1,4 @@
-#include "..\\..\\include\\��Ϸ�л���\\Coffin.h"
+﻿#include "..\\..\\include\\游戏中机关\\Coffin.h"
 
 Coffin :: Coffin(float _x, float _y)
 {
@@ -28,7 +28,7 @@ void Coffin :: ToMapCal(DoohSpecies* map)
 
 GameState Coffin :: logic(Player* player, DoohSpecies* map)
 {
-	//�ж�С���Ƿ��ڳ��ӵĹ�����Χ֮��
+	//ÅÐ¶ÏÐ¡ÈËÊÇ·ñÔÚ³æ×ÓµÄ¹¥»÷·¶Î§Ö®ÄÚ
 	float player_x = player->getX();
 	float player_y = player->getY();
 
@@ -36,33 +36,33 @@ GameState Coffin :: logic(Player* player, DoohSpecies* map)
 		player_y <= (this->y + COFFIN_HEIGHT / 2 + WORM_HEIGHT) &&
 		DoohickeyState == INACTIVE )
 	{
-		//��������ڳ��ӹ�����Χ֮��,�ۼ�ʱ��
+		//Èç¹û³ÖÐøÔÚ³æ×Ó¹¥»÷·¶Î§Ö®ÄÚ,ÀÛ¼ÓÊ±¼ä
 		if(LastIn)
 			LastTime += hge -> Timer_GetDelta();
 		else 
 			LastTime = 0;
 
 		LastIn = true;
-		//��������ڳ��ӹ�����Χ֮��3������
+		//¼ÙÉè³ÖÐøÔÚ³æ×Ó¹¥»÷·¶Î§Ö®ÄÚ3Ãë±ã±ÐÃü
 		if(LastTime >= 3.0)
 			return DEAD;
 	}
 	else
 		LastIn = false;
 
-	//�ж�ɱ����Ƿ���Ч
+	//ÅÐ¶ÏÉ±³æ¼ÁÊÇ·ñÆðÐ§
 	_Pesticide* p = ( _Pesticide* )( Account :: getAccount()->getProperty(_PESTICIDE) );
 	if( p != NULL && p->KilledWorm())
 	{
-		//ʹ���ӵ�������ȾϵͳʧЧ
+		//Ê¹³æ×ÓµÄÁ£×ÓäÖÈ¾ÏµÍ³Ê§Ð§
 
 		DoohickeyState = ACTIVE;
 	}
 
-	//�����Ѿ�������
+	//³æ×ÓÒÑ¾­±»ÏûÃð
 	if(DoohickeyState == ACTIVE && (map[(int)(player_x - player ->getWidth() / 2 + MAPPOINTQUANTITY_X * player_y)] == COFFIN || map[(int)(player_x + player -> getWidth() / 2 + MAPPOINTQUANTITY_X * player_y)] == COFFIN))
 	{
-		//�õ�ʲô���ͨ��
+		//µÃµ½Ê²Ã´±¦Îï£¬Í¨¹Ø
 
 		return SUCCESS;
 	}

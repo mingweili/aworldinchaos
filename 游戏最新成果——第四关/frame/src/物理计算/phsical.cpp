@@ -1,11 +1,11 @@
-#include "..\\..\\include\\ÎïÀí¼ÆËã\\MapCal.h"
+ï»¿#include "..\\..\\include\\ç‰©ç†è®¡ç®—\\MapCal.h"
 
 void HitMap(Player* player, DoohSpecies* map)
 {
 	DoohSpecies species;
 	KEYDIRECTION KeyDirection = player -> getKeyDirection();
 
-	//¼ì²â×ó±ßÔµ
+	//Â¼Ã¬Â²Ã¢Ã—Ã³Â±ÃŸÃ”Âµ
 	float LeftEage_x = player -> getX() - player -> getWidth() / 2;
 	float LeftEage_y = player -> getY();
 
@@ -14,7 +14,7 @@ void HitMap(Player* player, DoohSpecies* map)
 	if(species == ROCK && KeyDirection == KEY_LEFT)
 		player -> setDx(0);
 
-	//¼ì²âÓÒ±ßÔµ
+	//Â¼Ã¬Â²Ã¢Ã“Ã’Â±ÃŸÃ”Âµ
 	float RightEage_x = player -> getX() + player -> getWidth() / 2;
 	float RightEage_y = player -> getY();
 
@@ -23,7 +23,7 @@ void HitMap(Player* player, DoohSpecies* map)
 	if(species == ROCK && KeyDirection == KEY_RIGHT)
 		player -> setDx(0);
 
-	//¼ì²â½ÅÏÂ
+	//Â¼Ã¬Â²Ã¢Â½Ã…ÃÃ‚
 	float foot_x = player -> getX();
 	float foot_y = player -> getY() + player -> getHeight() / 2;
 
@@ -37,7 +37,7 @@ void HitMap(Player* player, DoohSpecies* map)
 			hge -> Effect_Play(player -> getSound());
 		}
 
-		//´Ë¶¯×÷Ê±ÐÞ¸Äµ¥Î»Î»ÒÆÁ¿¹ý´ó£¬Ç¿ÖÆÉÏÒÆ
+		//Â´Ã‹Â¶Â¯Ã—Ã·ÃŠÂ±ÃÃžÂ¸Ã„ÂµÂ¥ÃŽÂ»ÃŽÂ»Ã’Ã†ÃÂ¿Â¹Ã½Â´Ã³Â£Â¬Ã‡Â¿Ã–Ã†Ã‰ÃÃ’Ã†
 		float RightY = foot_y;
 		while (map[(int) (foot_x + MAPPOINTQUANTITY_X * (--RightY))] != AIR);
 		player -> setY(RightY - player -> getHeight() / 2 + 1);

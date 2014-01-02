@@ -1,8 +1,8 @@
-#ifndef _TORTOISE2_H
+﻿#ifndef _TORTOISE2_H
 #define _TORTOISE2_H
 
 #include "Property.h"
-#include "..\\�˻�\\Account.h"
+#include "..\\账户\\Account.h"
 
 using namespace std;
 

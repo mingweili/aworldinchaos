@@ -1,4 +1,4 @@
-#include "..\\..\\include\\��Ϸ�л���\\CaskFragment.h"
+﻿#include "..\\..\\include\\游戏中机关\\CaskFragment.h"
 
 int CaskFragment :: quantity = 0;
 
@@ -29,7 +29,7 @@ void CaskFragment :: ToMapCal(DoohSpecies* map)
 
 GameState CaskFragment :: logic(Player* player, DoohSpecies* map)
 {
-	//�ж�С���Ƿ񾭹���ľͰ��Ƭ
+	//ÅÐ¶ÏÐ¡ÈËÊÇ·ñ¾­¹ýÁËÄ¾Í°ËéÆ¬
 	float x = player->getX();
 	float y = player->getY();
 
@@ -42,7 +42,7 @@ GameState CaskFragment :: logic(Player* player, DoohSpecies* map)
 		if(quantity == 4)
 		{
 			//MessageBox(NULL, "sfsfdsf", "Error", MB_OK | MB_ICONERROR | MB_APPLMODAL);
-			//��������ĸ�ľͰ��Ƭ�������ľͰ�ĵ���
+			//Èç¹û¼¯ÂúËÄ¸öÄ¾Í°ËéÆ¬£¬Ôò³öÏÖÄ¾Í°µÄµÀ¾ß
 			Account :: getAccount()->AddProperty(_CASK);
 			HEFFECT  sound;
 			sound = ResourceManager ::getEffect("GUISound");

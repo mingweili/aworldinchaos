@@ -1,4 +1,4 @@
-#include "..\\..\\include\\��Ϸ�л���\\Key.h"
+﻿#include "..\\..\\include\\游戏中机关\\Key.h"
 
 Key :: Key(float _x, float _y)
 {
@@ -28,10 +28,10 @@ GameState Key :: logic(Player* player, DoohSpecies* map)
 
 	if(map[(int)(player_x + MAPPOINTQUANTITY_X * player_y)] == KEY)
 	{
-		//��Կ����ΪDONE��������Ⱦ����ͼƬ
+		//½«Ô¿³×ÉèÎªDONE£¬²»ÔÙäÖÈ¾³öÏÖÍ¼Æ¬
 		DoohickeyState = DONE;
 
-		//����ͼ�е���Ӧλ�ø�ΪAIR
+		//½«µØÍ¼ÖÐµÄÏàÓ¦Î»ÖÃ¸ÄÎªAIR
 		for(int i = (int) (x - width / 2); i < (int) (x + width / 2); ++i)
 			for(int j = (int) (y - height / 2); j < (int) (y + height / 2); ++j)
 				map[i + MAPPOINTQUANTITY_X * j] = AIR;

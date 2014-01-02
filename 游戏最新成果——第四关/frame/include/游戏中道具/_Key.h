@@ -1,8 +1,8 @@
-#ifndef _KEY_H
+﻿#ifndef _KEY_H
 #define _KEY_H
 
 #include "Property.h"
-#include "..\\�˻�\\Account.h"
+#include "..\\账户\\Account.h"
 
 using namespace std;
 

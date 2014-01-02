@@ -1,6 +1,6 @@
-#include "..\\..\\include\\Î¬¶È×ª»»\\BackGround1.h"
+ï»¿#include "..\\..\\include\\ç»´åº¦è½¬æ¢\\BackGround1.h"
 
-BackGround1 :: BackGround1(HGE *hge, int level)//ÔÚÕâÀï¸ù¾İ²»Í¬µÄ¹Ø¿¨ÉèÖÃ²»Í¬µÄÍ¼Æ¬±³¾°
+BackGround1 :: BackGround1(HGE *hge, int level)//Ã”ÃšÃ•Ã¢Ã€Ã¯Â¸Ã¹Â¾ÃÂ²Â»ÃÂ¬ÂµÃ„Â¹Ã˜Â¿Â¨Ã‰Ã¨Ã–ÃƒÂ²Â»ÃÂ¬ÂµÃ„ÃÂ¼Ã†Â¬Â±Â³Â¾Â°
 	: BackGround(hge), currentState(true), currentPicNum(1)
 {
 	currentlevel = level;
@@ -100,7 +100,7 @@ void BackGround1::RenderPic()
 
 	float dt = 0.0005;
 
-	//Ïò×óÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²Ã—Ã³Ã’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
 	if(LIFT)
 	{
 		currentState = false;
@@ -129,7 +129,7 @@ void BackGround1::RenderPic()
 		renderx2 = &(sprStrct[sprNow->right].sprx); rendery2 = &(sprStrct[sprNow->right].spry);
 	}
 
-	//ÏòÓÒÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²Ã“Ã’Ã’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
 	if(RIGHT)
 	{
 		currentState = false;

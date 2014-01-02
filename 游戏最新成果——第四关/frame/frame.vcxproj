@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>混沌的世界—寒假最新成果</ProjectName>
+    <ProjectGuid>{D236892B-9F4D-4646-948F-891D8295881A}</ProjectGuid>
+    <RootNamespace>frame</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Chandler\Desktop\hge181\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>hge.lib;hgehelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Chandler\Desktop\hge181\lib\vc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\编程用\hge181\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>hge.lib;hgehelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\编程用\hge181\lib\vc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\游戏中道具\_Cask.cpp" />
+    <ClCompile Include="src\游戏中道具\_Tortoise1.cpp" />
+    <ClCompile Include="src\游戏中道具\_Tortoise2.cpp" />
+    <ClCompile Include="src\游戏中道具\_Tortoise3.cpp" />
+    <ClCompile Include="src\游戏中道具\_Tortoise4.cpp" />
+    <ClCompile Include="src\维度转换\BackGround4.cpp" />
+    <ClCompile Include="src\游戏中机关\Cave.cpp" />
+    <ClCompile Include="src\游戏中机关\Killer.cpp" />
+    <ClCompile Include="src\游戏中机关\Pearl.cpp" />
+    <ClCompile Include="src\游戏中机关\Seed.cpp" />
+    <ClCompile Include="src\游戏中机关\Tortoise.cpp" />
+    <ClCompile Include="src\游戏中机关\Water.cpp" />
+    <ClCompile Include="src\GUI\HDGUIButton.cpp" />
+    <ClCompile Include="src\GUI\Menu.cpp" />
+    <ClCompile Include="src\物理计算\MapCal.cpp" />
+    <ClCompile Include="src\物理计算\phsical.cpp" />
+    <ClCompile Include="src\游戏中机关\BookEstrade.cpp" />
+    <ClCompile Include="src\游戏中机关\CaskFragment.cpp" />
+    <ClCompile Include="src\游戏中机关\Coffin.cpp" />
+    <ClCompile Include="src\游戏中机关\Door.cpp" />
+    <ClCompile Include="src\游戏中机关\Elevator.cpp" />
+    <ClCompile Include="src\游戏中机关\Key.cpp" />
+    <ClCompile Include="src\游戏中机关\Ladder.cpp" />
+    <ClCompile Include="src\游戏中机关\MobileLadder.cpp" />
+    <ClCompile Include="src\游戏中机关\Pesticide.cpp" />
+    <ClCompile Include="src\游戏中机关\SoftLand.cpp" />
+    <ClCompile Include="src\维度转换\BackGround1.cpp" />
+    <ClCompile Include="src\维度转换\BackGround3.cpp" />
+    <ClCompile Include="src\游戏中道具\_Key.cpp" />
+    <ClCompile Include="src\游戏中道具\_MobileLadder.cpp" />
+    <ClCompile Include="src\游戏中道具\_Pesticide.cpp" />
+    <ClCompile Include="src\游戏过程\dimensionality.cpp" />
+    <ClCompile Include="src\游戏过程\Scene.cpp" />
+    <ClCompile Include="src\资源管理\ResourceManager.cpp" />
+    <ClCompile Include="src\主人公\Player.cpp" />
+    <ClCompile Include="src\主体\GameInitialize.cpp" />
+    <ClCompile Include="src\主体\main.cpp" />
+    <ClCompile Include="src\账户\Account.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\游戏中道具\_Tortoise1.h" />
+    <ClInclude Include="include\主体\defines.h" />
+    <ClInclude Include="include\主体\GameInitialize.h" />
+    <ClInclude Include="include\主体\MyHGE.h" />
+    <ClInclude Include="include\账户\Account.h" />
+    <ClInclude Include="include\主人公\Player.h" />
+    <ClInclude Include="include\资源管理\ResourceManager.h" />
+    <ClInclude Include="include\游戏过程\Scene.h" />
+    <ClInclude Include="include\GUI\HDButton.h" />
+    <ClInclude Include="include\GUI\Menu.h" />
+    <ClInclude Include="include\维度转换\BackGround.h" />
+    <ClInclude Include="include\维度转换\BackGround1.h" />
+    <ClInclude Include="include\维度转换\BackGround3.h" />
+    <ClInclude Include="include\游戏中机关\BookEstrade.h" />
+    <ClInclude Include="include\游戏中机关\CaskFragment.h" />
+    <ClInclude Include="include\游戏中机关\Coffin.h" />
+    <ClInclude Include="include\游戏中机关\Doohickey.h" />
+    <ClInclude Include="include\游戏中机关\Door.h" />
+    <ClInclude Include="include\游戏中机关\Elevator.h" />
+    <ClInclude Include="include\游戏中机关\Key.h" />
+    <ClInclude Include="include\游戏中机关\Ladder.h" />
+    <ClInclude Include="include\游戏中机关\MobileLadder.h" />
+    <ClInclude Include="include\游戏中机关\Pesticide.h" />
+    <ClInclude Include="include\游戏中机关\SoftLand.h" />
+    <ClInclude Include="include\物理计算\MapCal.h" />
+    <ClInclude Include="include\游戏中道具\_Cask.h" />
+    <ClInclude Include="include\游戏中道具\_Key.h" />
+    <ClInclude Include="include\游戏中道具\_MobileLadder.h" />
+    <ClInclude Include="include\游戏中道具\_Pesticide.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise2.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise3.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise4.h" />
+    <ClInclude Include="include\维度转换\BackGround4.h" />
+    <ClInclude Include="include\游戏中机关\Cave.h" />
+    <ClInclude Include="include\游戏过程\Dimensionality.h" />
+    <ClInclude Include="include\游戏中机关\Killer.h" />
+    <ClInclude Include="include\游戏中机关\Pearl.h" />
+    <ClInclude Include="include\游戏中道具\property.h" />
+    <ClInclude Include="include\游戏中机关\Seed.h" />
+    <ClInclude Include="include\游戏中机关\Tortoise.h" />
+    <ClInclude Include="include\游戏中机关\Water.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,5 +1,5 @@
-#include "..\\..\\include\\ÓÎÏ·ÖĞµÀ¾ß\\_MobileLadder.h"
-#include "..\\..\\include\\ÓÎÏ·¹ı³Ì\\Scene.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­é“å…·\\_MobileLadder.h"
+#include "..\\..\\include\\æ¸¸æˆè¿‡ç¨‹\\Scene.h"
 
 _MobileLadder :: _MobileLadder()
 {
@@ -13,7 +13,7 @@ _MobileLadder :: _MobileLadder()
 
 void _MobileLadder :: logic(Player* player, DoohSpecies* map)
 {
-	//Èç¹û¿ÉÒÆ¶¯µÄÌİ×Ó±»Ò»´ÎĞÔµÄ¼¤»î
+	//ÃˆÃ§Â¹Ã»Â¿Ã‰Ã’Ã†Â¶Â¯ÂµÃ„ÃŒÃÃ—Ã“Â±Â»Ã’Â»Â´ÃÃÃ”ÂµÃ„Â¼Â¤Â»Ã®
 	if(IsUsing && !active)
 	{
 		active = true;
@@ -21,17 +21,17 @@ void _MobileLadder :: logic(Player* player, DoohSpecies* map)
 		float width = 100;
 		float height = 280;
 
-		//ĞŞ¸ÄµØÍ¼£¬Ê¹Æä¶àÒ»¸öÆÕÍ¨µÄÌİ×Ó
+		//ÃÃÂ¸Ã„ÂµÃ˜ÃÂ¼Â£Â¬ÃŠÂ¹Ã†Ã¤Â¶Ã Ã’Â»Â¸Ã¶Ã†Ã•ÃÂ¨ÂµÃ„ÃŒÃÃ—Ã“
 		for(int i = (int) (x - width / 2); i <= (int) (x + width / 2); ++i)
 			for(int j = (int) y - height / 2 + 2; j <= (int) y + height / 2; ++j)
 				map[i + MAPPOINTQUANTITY_X * j] = LADDER;
 
-		//ĞŞ¸ÄÌİ×ÓµÄ¾«Áé£¬Ê¹Ö®³ÉÎª¼òµ¥µÄÌİ×Ó
+		//ÃÃÂ¸Ã„ÃŒÃÃ—Ã“ÂµÃ„Â¾Â«ÃÃ©Â£Â¬ÃŠÂ¹Ã–Â®Â³Ã‰ÃÂªÂ¼Ã²ÂµÂ¥ÂµÃ„ÃŒÃÃ—Ã“
 	}
 
 	if(active)
 	{
-		//¼ì²âÊÇ·ñÏÂÌİ×Ó
+		//Â¼Ã¬Â²Ã¢ÃŠÃ‡Â·Ã±ÃÃ‚ÃŒÃÃ—Ã“
 		float foot_y = player -> getY() + player -> getHeight() / 2 + 2;
 		float x = player -> getX();
 
@@ -41,7 +41,7 @@ void _MobileLadder :: logic(Player* player, DoohSpecies* map)
 
 			player -> setState(CLIMBING_DOWN);
 
-		//¼ì²âÊÇ·ñÉÏÌİ×Ó,¸ù¾İĞ¡ÈËÍ·ÉÏÊÇ·ñÓĞÌİ×ÓÀ´ÅĞ¶Ï
+		//Â¼Ã¬Â²Ã¢ÃŠÃ‡Â·Ã±Ã‰ÃÃŒÃÃ—Ã“,Â¸Ã¹Â¾ÃÃÂ¡ÃˆÃ‹ÃÂ·Ã‰ÃÃŠÃ‡Â·Ã±Ã“ÃÃŒÃÃ—Ã“Ã€Â´Ã…ÃÂ¶Ã
 		float top_y = player -> getY() - player -> getHeight() / 2;
 		if( map[(int) (x + top_y * MAPPOINTQUANTITY_X)] == LADDER
 			&& x >= this -> x - 10 && x <= this -> x + 10

@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·ÖĞ»ú¹Ø\\Ladder.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­æœºå…³\\Ladder.h"
 
 Ladder :: Ladder(float _x, float _y)
 {
@@ -21,7 +21,7 @@ void Ladder :: ToMapCal(DoohSpecies* map)
 
 GameState Ladder :: logic(Player* player, DoohSpecies* map)
 {
-	//¼ì²âÊÇ·ñÏÂÌİ×Ó
+	//Â¼Ã¬Â²Ã¢ÃŠÃ‡Â·Ã±ÃÃ‚ÃŒÃÃ—Ã“
 	float foot_y = player -> getY() + player -> getHeight() / 2 + 2;
 	float x = player -> getX();
 

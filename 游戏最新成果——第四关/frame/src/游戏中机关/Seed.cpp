@@ -1,4 +1,4 @@
-#include "..\\..\\include\\сно╥жп╩З╧ь\\Seed.h"
+О╩©#include "..\\..\\include\\Ф╦╦Ф┬▐Д╦╜Ф°╨Е┘Ё\\Seed.h"
 
 Seed :: Seed(float _x, float _y)
 {
@@ -25,17 +25,17 @@ GameState Seed :: logic(Player* player, DoohSpecies* map)
 {
 	_Cask* aCask = (_Cask*)(Account :: getAccount()-> getProperty(_CASK));
 	
-	//хГ╧Шря╬╜╪╓╥╒акд╬м╟╣д╣╧к╝,╪╢п║хкн╩сзжжвс╣дет╠ъгруЩтзй╧сцд╬м╟
+	//ц┬ц╖б╧ц╩ц▓ц▒б╬б╜б╪б╓б╥б╒ц│ц▀ц└б╬ц█б╟б╣ц└б╣б╧ц▀б╝,б╪б╢ц░б║ц┬ц▀ц▌б╩ц⌠ц ц√ц√ц≈ц⌠б╣ц└ц┘ц■б╠ц÷ц┤ц▓ц∙ц╫ц■ц ц┼б╧ц⌠ц┐ц└б╬ц█б╟
 	if( (aCask != NULL) && (aCask -> getPooling()))
 	{
-		//╫╚╬╚аИ╣дж╦уК╦д╠Дё╛вЖ╤╞╩╜Джх╬ё╛╫╚жжвс╠ДЁир╩╦Ж╪Р╣╔╣длщвс
+		//б╫б╚б╬б╚ц│ц╘б╣ц└ц√б╦ц∙ц╚б╦ц└б╠ц╓бёб╛ц≈ц╤б╤б╞б╩б╜ц╓ц√ц┬б╬бёб╛б╫б╚ц√ц√ц≈ц⌠б╠ц╓бЁц┴ц▓б╩б╦ц╤б╪ц╡б╣б╔б╣ц└ц▄ц²ц≈ц⌠
 		TurntoLadder(map);
 		aCask -> setUsing(false);
 		aCask -> setCaskState(-1);
 		DoohickeyState = ACTIVE;
 	}
 
-	//хГ╧Ш╠╩╪╓╥╒ё╛╣╠вЖр╩╦Жфум╗╣длщвс
+	//ц┬ц╖б╧ц╩б╠б╩б╪б╓б╥б╒бёб╛б╣б╠ц≈ц╤ц▓б╩б╦ц╤ц├ц∙ц█б╗б╣ц└ц▄ц²ц≈ц⌠
 	if(DoohickeyState == ACTIVE)
 	{
 		float foot_y = player -> getY() + player -> getHeight() / 2 + 2;
@@ -49,7 +49,7 @@ GameState Seed :: logic(Player* player, DoohSpecies* map)
 			return GOON;
 		}
 
-		//╪Л╡Бйг╥Яиолщвс,╦Ы╬щп║хкм╥иойг╥Ясплщвсю╢еп╤о
+		//б╪ц╛б╡ц╒ц┼ц┤б╥ц╠ц┴ц▐ц▄ц²ц≈ц⌠,б╦ц╧б╬ц²ц░б║ц┬ц▀ц█б╥ц┴ц▐ц┼ц┤б╥ц╠ц⌠ц░ц▄ц²ц≈ц⌠ц─б╢ц┘ц░б╤ц▐
 		float top_y = player -> getY() - player -> getHeight() / 2;
 		if( map[(int) (x + top_y * MAPPOINTQUANTITY_X)] == LADDER
 			&& x >= this -> x - 10 && x <= this -> x + 10
@@ -69,7 +69,7 @@ void Seed :: TurntoLadder(DoohSpecies* map)
 	x = 570; 
 	y = 331;
 
-	//╫╚жжвс╣д╣ь╥╫╦дЁир╩╦Жфум╗╣длщвс
+	//б╫б╚ц√ц√ц≈ц⌠б╣ц└б╣ц≤б╥б╫б╦ц└бЁц┴ц▓б╩б╦ц╤ц├ц∙ц█б╗б╣ц└ц▄ц²ц≈ц⌠
 	for(int i = 545; i <= 595; ++i)
 			for(int j = 242; j <= 420; ++j)
 				map[i + MAPPOINTQUANTITY_X * j] = LADDER;

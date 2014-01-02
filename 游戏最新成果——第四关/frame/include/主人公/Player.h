@@ -1,10 +1,10 @@
-#ifndef PLAYER_H
+﻿#ifndef PLAYER_H
 #define PLAYER_H
 
-#include "..\\����\\MyHGE.h"
-#include "..\\��Դ����\\ResourceManager.h"
+#include "..\\主体\\MyHGE.h"
+#include "..\\资源管理\\ResourceManager.h"
 
-//�����жϾ����沿����
+//ÓÃÀ´ÅÐ¶Ï¾«ÁéÃæ²¿³¯Ïò
 #define   FaceLeft       -1
 #define   FaceRight       1
 
@@ -17,7 +17,7 @@ enum GameState{DEAD = 0, SUCCESS, GOON};
 
 #define GRAVITY 25
 
-//С��ÿ���ߵ�λ��
+//Ð¡ÈËÃ¿´Î×ßµÄÎ»ÒÆ
 #define WALKSPEED 5
 
 enum KEYDIRECTION{KEY_LEFT, KEY_RIGHT};
@@ -96,7 +96,7 @@ public :
     
 	void logic()
 	{
-		//�Ժ��ٴ˴�дС��ʱ����߼�
+		//ÒÔºóÔÙ´Ë´¦Ð´Ð¡ÈËÊ±¼äµÄÂß¼­
 	};
 
 	void UpdatePos( float );
@@ -108,19 +108,19 @@ private :
 	Player();
 	static int level_id;
 
-	//С�˵Ŀ�����
+	//Ð¡ÈËµÄ¿í¡¢¸ß
 	static int width;
 	static int height;
 
-	//x��y����
+	//x£¬y×ø±ê
 	static float x;
 	static float y;	
 
-	//�����궴ʱ����һ������
+	//ÓÃÓÚ×ê¶´Ê±µÄÏÂÒ»¸ö×ø±ê
 	float next_x;
 	float next_y;
 	
-	//���ٶ�
+	//·ÖËÙ¶È
 	float SpeedX;
 	float SpeedY;
 
@@ -128,19 +128,19 @@ private :
 	float dy;
 
 
-	//render���õ�ָ��
+	//renderËùÓÃµÄÖ¸Õë
 	hgeAnimation* anima;
 	hgeAnimation* anima_walk;
 	hgeAnimation* anima_fall;
     hgeAnimation* anima_climb;
-	//�����ı侫��ĳ���
+	//ÓÃÀ´¸Ä±ä¾«ÁéµÄ³¯Ïò
 	int facepoint;
 
-	//�����жϵ�ǰ����״̬
+	//ÓÃÀ´ÅÐ¶Ïµ±Ç°ÔËÐÐ×´Ì¬
 	int anima_currentstate;
 	KEYDIRECTION KeyDirection;
 
-	//��ҵ�״̬
+	//Íæ¼ÒµÄ×´Ì¬
 	PlayerState state;
 
 	bool super;

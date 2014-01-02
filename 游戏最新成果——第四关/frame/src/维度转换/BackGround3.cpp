@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ά��ת��\\BackGround3.h"
+﻿#include "..\\..\\include\\维度转换\\BackGround3.h"
 
 BackGround3::BackGround3(HGE *hge, int level)
 	: BackGround(hge), currentState(true), currentPicNum(1)
@@ -119,7 +119,7 @@ void BackGround3::RenderPic()
 
 	float dt = 0.0005;
 
-	//�����ƶ������
+	//ÏòÓÒÒÆ¶¯µÄÇé¿ö
 	if(RIGHT)
 	{
 		currentState = false;
@@ -191,7 +191,7 @@ void BackGround3::RenderPic()
 		wideth2 = &(sprStrct[sprNow->right].length);
 	}
 
-	//�����ƶ������
+	//Ïò×óÒÆ¶¯µÄÇé¿ö
 
 	if(LIFT)
 	{

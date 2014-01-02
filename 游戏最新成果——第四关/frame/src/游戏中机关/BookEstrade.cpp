@@ -1,4 +1,4 @@
-#include "..\\..\\include\\��Ϸ�л���\\BookEstrade.h"
+﻿#include "..\\..\\include\\游戏中机关\\BookEstrade.h"
 
 BookEstrade :: BookEstrade(float _x, float _y)
 {
@@ -13,7 +13,7 @@ BookEstrade :: BookEstrade(float _x, float _y)
 	sprite -> SetZ(0.8f);
 	BookSprite -> SetZ(0);
 
-	//���ڼ���û��Ƿ���ȷ�ϼ�
+	//ÓÃÓÚ¼ì²âÓÃ»§ÊÇ·ñ°´ÁËÈ·ÈÏ¼ü
 	YesButton = new hgeRect(400, 300, 600, 500);
 }
 
@@ -34,7 +34,7 @@ GameState BookEstrade :: logic(Player* player, DoohSpecies* map)
 
 		player -> setSuper();
 
-		//��һ����Ļ�Ŀ���
+		//×öÒ»¸öÆÁÄ»µÄ¿ìÕÕ
 		//System_Snapshot("D:\\SnapShot.bmp");
 
 		SnapShot = hge -> Texture_Load("D:\\SnapShot.bmp");

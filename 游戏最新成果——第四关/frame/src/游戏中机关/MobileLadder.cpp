@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·ÖÐ»ú¹Ø\\MobileLadder.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­æœºå…³\\MobileLadder.h"
 
 MobileLadder :: MobileLadder(float _x, float _y)
 {
@@ -28,7 +28,7 @@ void MobileLadder :: ToMapCal(DoohSpecies* map)
 
 GameState MobileLadder :: logic(Player* player, DoohSpecies* map)
 {
-	//ÏÈ¼ì²âÍæ¼ÒÊÇ·ñ¼ñµ½ÁËÊÕËõÌÝ×Ó
+	//ÃÃˆÂ¼Ã¬Â²Ã¢ÃÃ¦Â¼Ã’ÃŠÃ‡Â·Ã±Â¼Ã±ÂµÂ½ÃÃ‹ÃŠÃ•Ã‹ÃµÃŒÃÃ—Ã“
 	float x = player->getX();
 	float y = player->getY();
 

@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "混沌的世界—寒假最新成果", "frame\frame.vcproj", "{D236892B-9F4D-4646-948F-891D8295881A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "混沌的世界—寒假最新成果", "frame\frame.vcxproj", "{D236892B-9F4D-4646-948F-891D8295881A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

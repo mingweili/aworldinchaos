@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="混沌的世界—寒假最新成果">
+</Property><Property Name="Solution File" Value="D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\混沌的世界—寒假最新成果.sln">
+</Property><Property Name="User Options File" Value="D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\混沌的世界—寒假最新成果.suo">
+</Property><Property Name="Date" Value="Thursday, January 02, 2014">
+</Property><Property Name="Time" Value="16:08 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="混沌的世界—寒假最新成果.sln" Description="File successfully backed up as D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\混沌的世界—寒假最新成果.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="混沌的世界—寒假最新成果.suo" Description="File successfully backed up as D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\混沌的世界—寒假最新成果.suo.old">
+</Event><Event ErrorLevel="0" Project="frame" Source="frame\frame.vcproj" Description="Converting project file 'D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\frame\frame.vcproj'.">
+</Event><Event ErrorLevel="1" Project="frame" Source="frame\frame.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="frame" Source="frame\frame.vcproj" Description="Done converting to new project file 'D:\Codes\Archives\A World in Chaos\游戏最新成果——第四关\frame\frame.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="frame" Source="frame\frame.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="混沌的世界—寒假最新成果.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="混沌的世界—寒假最新成果.sln" Description="Converted">
+</Event></UpgradeLog>

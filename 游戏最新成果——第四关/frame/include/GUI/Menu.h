@@ -1,13 +1,13 @@
-#ifndef MENU_H
+ï»¿#ifndef MENU_H
 #define MENU_H
 
 #include "hgegui.h"
 #include "hgefont.h"
 #include "HDButton.h"
 
-#include "..\\ÓÎÏ·¹ı³Ì\\Scene.h"
+#include "..\\æ¸¸æˆè¿‡ç¨‹\\Scene.h"
 
-//Ö÷²Ëµ¥¶ÔÓ¦µÄFrameºÍRenderº¯Êı
+//Ã–Ã·Â²Ã‹ÂµÂ¥Â¶Ã”Ã“Â¦ÂµÃ„FrameÂºÃRenderÂºÂ¯ÃŠÃ½
 bool FrameFunc_menu();
 bool RenderFunc_menu();
 
@@ -28,11 +28,11 @@ private:
 	hgeGUI* gui;
 
 	HEFFECT sound;
-	//ÓÃÓÚ°´¼üµÄÎÆÀí
+	//Ã“ÃƒÃ“ÃšÂ°Â´Â¼Ã¼ÂµÃ„ÃÃ†Ã€Ã­
 	HTEXTURE texture;
-    //Êó±êÖ¸Õë
+    //ÃŠÃ³Â±ÃªÃ–Â¸Ã•Ã«
 	hgeSprite* CursorSprite;
-	//±³¾°
+	//Â±Â³Â¾Â°
 	hgeSprite* spr_back;
 
 	hgeFont* fnt;

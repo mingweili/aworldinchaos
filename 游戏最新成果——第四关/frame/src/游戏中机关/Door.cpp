@@ -1,7 +1,7 @@
-#include "..\\..\\include\\сно╥жп╩З╧ь\\Door.h"
+О╩©#include "..\\..\\include\\Ф╦╦Ф┬▐Д╦╜Ф°╨Е┘Ё\\Door.h"
 
-#include "..\\..\\include\\ук╩╖\\Account.h"
-#include "..\\..\\include\\сно╥╧ЩЁл\\Scene.h"
+#include "..\\..\\include\\Х╢╕Ф┬╥\\Account.h"
+#include "..\\..\\include\\Ф╦╦Ф┬▐Х©┤Г╗▀\\Scene.h"
 
 Door :: Door(float _x, float _y)
 {
@@ -29,10 +29,10 @@ GameState Door :: logic(Player* player, DoohSpecies* map)
 	float player_x = player -> getX();
 	float player_y = player -> getY();
 	
-	//хГ╧Шп║хк╬╜╧Щакцеё╛╬м╫╚Ё║╬╟в╙╩╞н╙╧ь©╗2(╩Р1)
+	//ц┬ц╖б╧ц╩ц░б║ц┬ц▀б╬б╜б╧ц╫ц│ц▀ц┐ц┘бёб╛б╬ц█б╫б╚бЁб║б╬б╟ц≈б╙б╩б╞ц▌б╙б╧ц≤б©б╗2(б╩ц╡1)
 	if(map[(int)(player_x + MAPPOINTQUANTITY_X * player_y)] == DOOR)
 	{
-		//хГ╧Шожтзйг╣зр╩╧ьё╛╬мв╙╩╞╣╫╣з╤Ч╧ь
+		//ц┬ц╖б╧ц╩ц▐ц√ц■ц ц┼ц┤б╣ц ц▓б╩б╧ц≤бёб╛б╬ц█ц≈б╙б╩б╞б╣б╫б╣ц б╤ц╬б╧ц≤
 		if(Account :: getLevelId() == 1)
 		{
 			Account :: setLevelId(2);

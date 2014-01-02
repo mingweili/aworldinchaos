@@ -1,8 +1,8 @@
-#ifndef BACKGOURND_H
+﻿#ifndef BACKGOURND_H
 #define BACKGOURND_H
 
 #include "hge.h"
-#include "..\\��Դ����\\ResourceManager.h"
+#include "..\\资源管理\\ResourceManager.h"
 
 class BackGround
 {
@@ -13,7 +13,7 @@ public:
 	virtual void RenderPic(){};
 	virtual void BackGroundRender(){};
 
-	//���ص�ǰͼƬ��ŵĺ���
+	//·µ»Øµ±Ç°Í¼Æ¬±àºÅµÄº¯Êý
 	virtual inline int GetPicNum(){return currentPicNum;};
 	virtual inline bool GetCurrentState(){return currentState;};
 

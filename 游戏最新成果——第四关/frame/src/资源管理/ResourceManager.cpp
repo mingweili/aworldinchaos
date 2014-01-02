@@ -1,4 +1,4 @@
-#include "..\\..\\include\\×ÊÔ´¹ÜÀí\\ResourceManager.h"
+ï»¿#include "..\\..\\include\\èµ„æºç®¡ç†\\ResourceManager.h"
 
 hgeResourceManager* ResourceManager :: ResourceManagerPtr = new hgeResourceManager( "resources.res" );
 

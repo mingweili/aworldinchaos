@@ -1,12 +1,12 @@
-#ifndef _CASK_H
+﻿#ifndef _CASK_H
 #define _CASK_H
 
 #include "Property.h"
-#include "..\\�˻�\\Account.h"
+#include "..\\账户\\Account.h"
 
 using namespace std;
 
-//�����е�ľͰ��
+//µÀ¾ßÖÐµÄÄ¾Í°Àà
 class _Cask : public Property
 {
 public :
@@ -22,7 +22,7 @@ public :
 private :
 	bool isFull;
 	bool isPooling;
-	int CaskState;//ľͰ�Ľ������
+	int CaskState;//Ä¾Í°µÄ½ÓÂúÇé¿ö
 };
 
 #endif

@@ -1,69 +1,69 @@
-#include "..\\..\\include\\ÓÎÏ·¹ý³Ì\\Scene.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆè¿‡ç¨‹\\Scene.h"
 
 bool FrameFunc_scene()
 {
 	float dt = hge -> Timer_GetDelta();
 
-	////´Ë´¦ÔÝ¶¨Îª°´¡°E¡±¼üÇÐ»»³¡¾°¡°scene¡±
+	////Â´Ã‹Â´Â¦Ã”ÃÂ¶Â¨ÃŽÂªÂ°Â´Â¡Â°EÂ¡Â±Â¼Ã¼Ã‡ÃÂ»Â»Â³Â¡Â¾Â°Â¡Â°sceneÂ¡Â±
 	int level_id = Account :: getLevelId();
 	if(hge -> Input_GetKeyState(HGEK_E))
 		Account :: setLevelId(++level_id);
 
-	//ÔÝÊ±½«´Ë×÷Îª¿ªÆôµÀ¾ßµÄ·½·¨
-	//¿ªÆôÉý½µÌÝµÄÔ¿³×£º
+	//Ã”ÃÃŠÂ±Â½Â«Â´Ã‹Ã—Ã·ÃŽÂªÂ¿ÂªÃ†Ã´ÂµÃ€Â¾ÃŸÂµÃ„Â·Â½Â·Â¨
+	//Â¿ÂªÃ†Ã´Ã‰Ã½Â½ÂµÃŒÃÂµÃ„Ã”Â¿Â³Ã—Â£Âº
 	if(hge -> Input_GetKeyState(HGEK_K))
 		Account :: getAccount()->getProperty(_KEY) -> setUsing(true);
-	//Ê¹ÓÃÄ¾Í°
+	//ÃŠÂ¹Ã“ÃƒÃ„Â¾ÃÂ°
 	if(hge -> Input_GetKeyState(HGEK_C))
 		Account :: getAccount()->getProperty(_CASK) -> setUsing(true);
-	//Ê¹ÓÃ¿ÉÒÆ¶¯µÄÌÝ×Ó
+	//ÃŠÂ¹Ã“ÃƒÂ¿Ã‰Ã’Ã†Â¶Â¯ÂµÃ„ÃŒÃÃ—Ã“
 	if(hge -> Input_GetKeyState(HGEK_M))
 		Account :: getAccount()->getProperty(_MOBILE_LADDER) -> setUsing(true);
-	//Ê¹ÓÃÉ±³æ¼Á
+	//ÃŠÂ¹Ã“ÃƒÃ‰Â±Â³Ã¦Â¼Ã
 	if(hge -> Input_GetKeyState(HGEK_P))
 		Account :: getAccount()->getProperty(_PESTICIDE) -> setUsing(true);
 	
-	//Í¨¹ýµ¥¼þÄ£Ê½È¡µÃ³¡¾°¡¢Ð¡ÈËµÄÊµÀý
+	//ÃÂ¨Â¹Ã½ÂµÂ¥Â¼Ã¾Ã„Â£ÃŠÂ½ÃˆÂ¡ÂµÃƒÂ³Â¡Â¾Â°Â¡Â¢ÃÂ¡ÃˆÃ‹ÂµÃ„ÃŠÂµÃ€Ã½
 	Scene* SceneNow = Scene :: getScene(level_id);
 	Player* thePlayer = Player :: getPlayer(level_id);
 
-	//Êó±êÊÖÊÆµÄ¼ì²â£¬ÒÀÍÐÓÚµ±Ç°³¡¾°µÄµ÷ÓÃ
+	//ÃŠÃ³Â±ÃªÃŠÃ–ÃŠÃ†ÂµÃ„Â¼Ã¬Â²Ã¢Â£Â¬Ã’Ã€ÃÃÃ“ÃšÂµÂ±Ã‡Â°Â³Â¡Â¾Â°ÂµÃ„ÂµÃ·Ã“Ãƒ
 	SceneNow -> TransformJudge(thePlayer);
 
-	//È¡µÃµ±Ç°µÄÎ¬¶È
+	//ÃˆÂ¡ÂµÃƒÂµÂ±Ã‡Â°ÂµÃ„ÃŽÂ¬Â¶Ãˆ
 	Dimensionality* DimenNow = SceneNow -> getDimenNow();
 
-	//Ð¡ÈËµÄÊäÈë¼ì²â
+	//ÃÂ¡ÃˆÃ‹ÂµÃ„ÃŠÃ¤ÃˆÃ«Â¼Ã¬Â²Ã¢
 	thePlayer -> KeyboardInput();
 
-	//Ð¡ÈË×²Ç½¼ì²â
+	//ÃÂ¡ÃˆÃ‹Ã—Â²Ã‡Â½Â¼Ã¬Â²Ã¢
 	HitMap(thePlayer, DimenNow -> getMap());
 
-	//Èç¹ûµ±Ç°Ã»ÓÐ½øÐÐÎ¬¶È×ª»»£¬ÔòÕý³£½øÐÐÂß¼­´¦Àí
+	//ÃˆÃ§Â¹Ã»ÂµÂ±Ã‡Â°ÃƒÂ»Ã“ÃÂ½Ã¸ÃÃç»´åº¦è½¬æ¢Â£Â¬Ã”Ã²Ã•Ã½Â³Â£Â½Ã¸ÃÃÃ‚ÃŸÂ¼Â­Â´Â¦Ã€Ã­
 	if (SceneNow -> getState() == NORMAL)
 	{
-		//´Ë´¦ÊÇµ±Ç°Î¬¶ÈµÄËùÓÐ¿ÉÓÃ»ú¹ØµÄÂß¼­µ÷ÓÃ
+		//Â´Ã‹Â´Â¦ÃŠÃ‡ÂµÂ±Ã‡Â°ÃŽÂ¬Â¶ÃˆÂµÃ„Ã‹Ã¹Ã“ÃÂ¿Ã‰Ã“ÃƒÂ»ÃºÂ¹Ã˜ÂµÃ„Ã‚ÃŸÂ¼Â­ÂµÃ·Ã“Ãƒ
 		GameState gs = DimenNow -> DoohLogic(thePlayer);
 		switch(gs)
 		{
 		case SUCCESS :
-			//Èç¹û¹ý¹ØÁË£¬¾Í½«¹Ø¿¨Êý¼Ó1
+			//ÃˆÃ§Â¹Ã»Â¹Ã½Â¹Ã˜ÃÃ‹Â£Â¬Â¾ÃÂ½Â«Â¹Ã˜Â¿Â¨ÃŠÃ½Â¼Ã“1
 			Account :: setLevelId(++level_id);
 			break;
 		case DEAD :
-			//Èç¹ûËÀÁË£¬ÁíÐÐÌÖÂÛ
-			MessageBox(NULL, "¹þ¹þ", "ÄãËÀÁË£¬ÎÒ³É¹¦ÁË£¡£¡", MB_OK | MB_ICONERROR | MB_APPLMODAL);
+			//ÃˆÃ§Â¹Ã»Ã‹Ã€ÃÃ‹Â£Â¬ÃÃ­ÃÃÃŒÃ–Ã‚Ã›
+			MessageBox(NULL, "Â¹Ã¾Â¹Ã¾", "Ã„Ã£Ã‹Ã€ÃÃ‹Â£Â¬ÃŽÃ’Â³Ã‰Â¹Â¦ÃÃ‹Â£Â¡Â£Â¡", MB_OK | MB_ICONERROR | MB_APPLMODAL);
 			exit(0);
 		case GOON :
 		default :
 			break;
 		}
 
-		//µÀ¾ßµÄÂß¼­ÅÐ¶Ï
+		//ÂµÃ€Â¾ÃŸÂµÃ„Ã‚ÃŸÂ¼Â­Ã…ÃÂ¶Ã
 		Account :: getAccount() -> PropertyLogic(thePlayer, DimenNow->getMap());
 	}
  
-	//¸ù¾Ý×´Ì¬µÄ²»Í¬£¬¸üÐÂÐ¡ÈËµÄÎ»ÖÃ
+	//Â¸Ã¹Â¾ÃÃ—Â´ÃŒÂ¬ÂµÃ„Â²Â»ÃÂ¬Â£Â¬Â¸Ã¼ÃÃ‚ÃÂ¡ÃˆÃ‹ÂµÃ„ÃŽÂ»Ã–Ãƒ
 	thePlayer -> UpdatePos(dt);
 	
 	return false;
@@ -99,36 +99,36 @@ bool RenderFunc_scene()
 	hge->Gfx_BeginScene();
 	hge->Gfx_Clear(0);
 
-	//³¡¾°µØÍ¼µÄäÖÈ¾
+	//Â³Â¡Â¾Â°ÂµÃ˜ÃÂ¼ÂµÃ„Ã¤Ã–ÃˆÂ¾
 	SceneNow->background->BackGroundRender();
 
-	//Î¬¶ÈµÄäÖÈ¾
+	//ÃŽÂ¬Â¶ÃˆÂµÃ„Ã¤Ã–ÃˆÂ¾
 	if(SceneNow -> getState() == NORMAL)
 	{
 		SceneNow -> getDimenNow() -> DoohRender();
 
-	//Ò»Ð©ÌØÊâµÀ¾ßµÄäÖÈ¾
+	//Ã’Â»ÃÂ©ÃŒÃ˜ÃŠÃ¢ÂµÃ€Â¾ÃŸÂµÃ„Ã¤Ã–ÃˆÂ¾
 		Account ::getAccount() -> PropertyRender();
 	}
 
 
-	//Ð¡ÈËµÄäÖÈ¾º¯Êý
+	//ÃÂ¡ÃˆÃ‹ÂµÃ„Ã¤Ã–ÃˆÂ¾ÂºÂ¯ÃŠÃ½
 	thePlayer -> render();
 
 	hgeFont* fnt = SceneNow -> getFont();
 	Dimensionality* DimenNow = SceneNow -> getDimenNow();
 	char * s;
 	s = get(x, y, DimenNow);
-	fnt-> printf(10, 10, HGETEXT_LEFT, "self£º%s", s);
+	fnt-> printf(10, 10, HGETEXT_LEFT, "selfÂ£Âº%s", s);
 	s = get(x - 23, y, DimenNow);
-	fnt -> printf(10, 10, HGETEXT_LEFT, "\nleft£º%s", s);
+	fnt -> printf(10, 10, HGETEXT_LEFT, "\nleftÂ£Âº%s", s);
 	s = get(x + 23, y, DimenNow);
-	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\nright£º%s", s);
+	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\nrightÂ£Âº%s", s);
 	s = get(x, y + 31, DimenNow);
-	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\n\ndown£º%s", s);
+	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\n\ndownÂ£Âº%s", s);
 
-	//ÏÔÊ¾Ð¡ÈËµÄÕæÊµµÄ×ø±ê£º
-	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\n\n\n\n\noooo£º%.3f, %.3f", thePlayer -> getX(), thePlayer -> getY());
+	//ÃÃ”ÃŠÂ¾ÃÂ¡ÃˆÃ‹ÂµÃ„Ã•Ã¦ÃŠÂµÂµÃ„Ã—Ã¸Â±ÃªÂ£Âº
+	fnt -> printf(10, 10, HGETEXT_LEFT, "\n\n\n\n\n\nooooÂ£Âº%.3f, %.3f", thePlayer -> getX(), thePlayer -> getY());
 	hge->Gfx_EndScene();
 
 	return false;
@@ -158,23 +158,23 @@ Scene :: Scene(unsigned int _scene_id)
 
 void Scene :: initialize()
 {
-	//¼ÓÔØ×ÖÌå
+	//Â¼Ã“Ã”Ã˜Ã—Ã–ÃŒÃ¥
 	fnt = ResourceManager :: getFont("fnt");
 
-	//´Ë´¦»¹Ó¦ÓÐÏàÓ¦Í¼Æ¬¾«ÁéµÄ¼ÓÔØ£¬ÔÙËµ
+	//Â´Ã‹Â´Â¦Â»Â¹Ã“Â¦Ã“ÃÃÃ Ã“Â¦ÃÂ¼Ã†Â¬Â¾Â«ÃÃ©ÂµÃ„Â¼Ã“Ã”Ã˜Â£Â¬Ã”Ã™Ã‹Âµ
 	string dooh;
 	string MapFileAddr;
 
-	float dooh_x, dooh_y;//´Ë´¦´ú±íÁË»ú¹ØÔÚµØÍ¼ÖÐµÄÎ»ÖÃ
+	float dooh_x, dooh_y;//Â´Ã‹Â´Â¦Â´ÃºÂ±Ã­ÃÃ‹Â»ÃºÂ¹Ã˜Ã”ÃšÂµÃ˜ÃÂ¼Ã–ÃÂµÃ„ÃŽÂ»Ã–Ãƒ
 
 	string FileName = "..\\Debug\\resources\\Scene&Map\\scene" + *(new string(1, scene_id + '0')) + ".txt";
 	ifstream SceneFile(FileName.c_str(), ios :: in);
 
-	//³õÊ¼»¯µØÍ¼
+	//Â³ÃµÃŠÂ¼Â»Â¯ÂµÃ˜ÃÂ¼
 	getline(SceneFile, MapFileAddr);
 	aMapCal = new MapCal(MapFileAddr.c_str());
 
-	//È·¶¨³¡¾°µÄÎ¬¶È×ª»¯·½Ê½
+	//ÃˆÂ·Â¶Â¨Â³Â¡Â¾Â°ÂµÃ„ÃŽÂ¬Â¶ÃˆÃ—ÂªÂ»Â¯Â·Â½ÃŠÂ½
 	switch (scene_id)
 	{
 	case 1 :
@@ -198,7 +198,7 @@ void Scene :: initialize()
 			dimens[DimenQuantity] = new Dimensionality;
 			dimens[DimenQuantity] -> setMap(aMapCal -> getMap());
 		}
-		//ºóÃæÒ»ÏµÁÐµÄ»ú¹Ø±»¼ÓÔØ
+		//ÂºÃ³ÃƒÃ¦Ã’Â»ÃÂµÃÃÂµÃ„Â»ÃºÂ¹Ã˜Â±Â»Â¼Ã“Ã”Ã˜
 		dimens[DimenQuantity] -> AddDooh(dooh, dooh_x, dooh_y);
 
 	}

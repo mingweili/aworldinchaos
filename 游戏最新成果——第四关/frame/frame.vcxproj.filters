@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\GUI">
+      <UniqueIdentifier>{26e8d3f1-4ff4-4a1e-9cd4-ea6dc7a97cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\物理计算">
+      <UniqueIdentifier>{7b6d2679-6fd0-4652-aa09-f34ed5e09fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\游戏中机关">
+      <UniqueIdentifier>{ae78fdec-718a-4d15-ad67-765f7bf64619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\维度转换">
+      <UniqueIdentifier>{a50bb865-9c9b-4f1e-ac23-09292243eb28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\游戏中道具">
+      <UniqueIdentifier>{29ff3a5a-6507-4c0b-8dd8-20a45e77292f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\游戏过程">
+      <UniqueIdentifier>{e49dfa07-0f12-4d4c-a995-eebea289e80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\资源管理">
+      <UniqueIdentifier>{b005b241-5f61-465b-829b-7d2b586a23b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\主人公">
+      <UniqueIdentifier>{3383a484-bb4d-474d-9e34-8d1ea776d742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\主体">
+      <UniqueIdentifier>{ddc4e9fa-a88e-4a1e-80b1-8416cad49d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\账户">
+      <UniqueIdentifier>{99bd0172-9e8a-40bf-8307-292e6efc3336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{9ce7b1d5-a12a-4388-b3ad-b34731344612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\主体">
+      <UniqueIdentifier>{6f31b2af-476c-4b0a-9ced-134b1459894b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\账户">
+      <UniqueIdentifier>{fa616765-5321-4112-a3fe-5c871cc72426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\主人公">
+      <UniqueIdentifier>{98fc9c30-01b2-4beb-846a-e047c3782947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\资源管理">
+      <UniqueIdentifier>{a506c494-82bf-4345-97e3-0c649a82d0ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\游戏过程">
+      <UniqueIdentifier>{22977fae-fe21-4d2a-84ad-7f0801516651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GUI">
+      <UniqueIdentifier>{2a15b17a-45cd-4706-86b4-a5dc1e5c88ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\游戏中道具">
+      <UniqueIdentifier>{4c2e63cf-b851-49e2-9dfc-f36ffe70496b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\维度转换">
+      <UniqueIdentifier>{8805f9c7-cab4-4cf5-b8dd-7932c6f0b7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\游戏中机关">
+      <UniqueIdentifier>{51b23bdc-c4ca-40f1-b6ae-9ee132d46879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\物理计算">
+      <UniqueIdentifier>{d4393065-a95b-4458-9d46-824ceca5380c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\游戏中道具\_Cask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Tortoise1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Tortoise2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Tortoise3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Tortoise4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\维度转换\BackGround4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Cave.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Killer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Pearl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Seed.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Tortoise.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Water.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\HDGUIButton.cpp">
+      <Filter>源文件\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Menu.cpp">
+      <Filter>源文件\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\物理计算\MapCal.cpp">
+      <Filter>源文件\物理计算</Filter>
+    </ClCompile>
+    <ClCompile Include="src\物理计算\phsical.cpp">
+      <Filter>源文件\物理计算</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\BookEstrade.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\CaskFragment.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Coffin.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Door.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Elevator.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Key.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Ladder.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\MobileLadder.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\Pesticide.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中机关\SoftLand.cpp">
+      <Filter>源文件\游戏中机关</Filter>
+    </ClCompile>
+    <ClCompile Include="src\维度转换\BackGround1.cpp">
+      <Filter>源文件\维度转换</Filter>
+    </ClCompile>
+    <ClCompile Include="src\维度转换\BackGround3.cpp">
+      <Filter>源文件\维度转换</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Key.cpp">
+      <Filter>源文件\游戏中道具</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_MobileLadder.cpp">
+      <Filter>源文件\游戏中道具</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏中道具\_Pesticide.cpp">
+      <Filter>源文件\游戏中道具</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏过程\dimensionality.cpp">
+      <Filter>源文件\游戏过程</Filter>
+    </ClCompile>
+    <ClCompile Include="src\游戏过程\Scene.cpp">
+      <Filter>源文件\游戏过程</Filter>
+    </ClCompile>
+    <ClCompile Include="src\资源管理\ResourceManager.cpp">
+      <Filter>源文件\资源管理</Filter>
+    </ClCompile>
+    <ClCompile Include="src\主人公\Player.cpp">
+      <Filter>源文件\主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="src\主体\GameInitialize.cpp">
+      <Filter>源文件\主体</Filter>
+    </ClCompile>
+    <ClCompile Include="src\主体\main.cpp">
+      <Filter>源文件\主体</Filter>
+    </ClCompile>
+    <ClCompile Include="src\账户\Account.cpp">
+      <Filter>源文件\账户</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\游戏中道具\_Tortoise1.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\主体\defines.h">
+      <Filter>头文件\主体</Filter>
+    </ClInclude>
+    <ClInclude Include="include\主体\GameInitialize.h">
+      <Filter>头文件\主体</Filter>
+    </ClInclude>
+    <ClInclude Include="include\主体\MyHGE.h">
+      <Filter>头文件\主体</Filter>
+    </ClInclude>
+    <ClInclude Include="include\账户\Account.h">
+      <Filter>头文件\账户</Filter>
+    </ClInclude>
+    <ClInclude Include="include\主人公\Player.h">
+      <Filter>头文件\主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="include\资源管理\ResourceManager.h">
+      <Filter>头文件\资源管理</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏过程\Scene.h">
+      <Filter>头文件\游戏过程</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\HDButton.h">
+      <Filter>头文件\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Menu.h">
+      <Filter>头文件\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\维度转换\BackGround.h">
+      <Filter>头文件\维度转换</Filter>
+    </ClInclude>
+    <ClInclude Include="include\维度转换\BackGround1.h">
+      <Filter>头文件\维度转换</Filter>
+    </ClInclude>
+    <ClInclude Include="include\维度转换\BackGround3.h">
+      <Filter>头文件\维度转换</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\BookEstrade.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\CaskFragment.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Coffin.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Doohickey.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Door.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Elevator.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Key.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Ladder.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\MobileLadder.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\Pesticide.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中机关\SoftLand.h">
+      <Filter>头文件\游戏中机关</Filter>
+    </ClInclude>
+    <ClInclude Include="include\物理计算\MapCal.h">
+      <Filter>头文件\物理计算</Filter>
+    </ClInclude>
+    <ClInclude Include="include\游戏中道具\_Cask.h" />
+    <ClInclude Include="include\游戏中道具\_Key.h" />
+    <ClInclude Include="include\游戏中道具\_MobileLadder.h" />
+    <ClInclude Include="include\游戏中道具\_Pesticide.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise2.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise3.h" />
+    <ClInclude Include="include\游戏中道具\_Tortoise4.h" />
+    <ClInclude Include="include\维度转换\BackGround4.h" />
+    <ClInclude Include="include\游戏中机关\Cave.h" />
+    <ClInclude Include="include\游戏过程\Dimensionality.h" />
+    <ClInclude Include="include\游戏中机关\Killer.h" />
+    <ClInclude Include="include\游戏中机关\Pearl.h" />
+    <ClInclude Include="include\游戏中道具\property.h" />
+    <ClInclude Include="include\游戏中机关\Seed.h" />
+    <ClInclude Include="include\游戏中机关\Tortoise.h" />
+    <ClInclude Include="include\游戏中机关\Water.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

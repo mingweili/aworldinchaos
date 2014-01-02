@@ -1,22 +1,22 @@
-#ifndef DIMENSIONALITY_H
+ï»¿#ifndef DIMENSIONALITY_H
 #define DIMENSIONALITY_H
 
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\SoftLand.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\BookEstrade.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Ladder.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Elevator.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Door.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Key.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Coffin.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\CaskFragment.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Pesticide.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\MobileLadder.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Seed.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Water.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Pearl.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Cave.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Killer.h"
-#include "..\\ÓÎÏ·ÖĞ»ú¹Ø\\Tortoise.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\SoftLand.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\BookEstrade.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Ladder.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Elevator.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Door.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Key.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Coffin.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\CaskFragment.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Pesticide.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\MobileLadder.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Seed.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Water.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Pearl.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Cave.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Killer.h"
+#include "..\\æ¸¸æˆä¸­æœºå…³\\Tortoise.h"
 class Dimensionality
 {
 public :
@@ -24,22 +24,22 @@ public :
 	
 	~Dimensionality();
 
-	void setMap( DoohSpecies* );                             //³õÊ¼»¯Î¬¶ÈµØÍ¼
+	void setMap( DoohSpecies* );                             //Â³ÃµÃŠÂ¼Â»Â¯ÃÂ¬Â¶ÃˆÂµÃ˜ÃÂ¼
 
-	DoohSpecies MapSpecies( int x, int y );					 //È¡µÃÄ³µãµÄÊôĞÔ
+	DoohSpecies MapSpecies( int x, int y );					 //ÃˆÂ¡ÂµÃƒÃ„Â³ÂµÃ£ÂµÃ„ÃŠÃ´ÃÃ”
 
-	DoohSpecies* getMap() { return DimenMap; };				 //Ö±½ÓÈ¡µÃÕû¸öµØÍ¼
+	DoohSpecies* getMap() { return DimenMap; };				 //Ã–Â±Â½Ã“ÃˆÂ¡ÂµÃƒÃ•Ã»Â¸Ã¶ÂµÃ˜ÃÂ¼
 
-	void AddDooh( string, float , float );					 //Ìí¼Ó»ú¹Ø
+	void AddDooh( string, float , float );					 //ÃŒÃ­Â¼Ã“Â»ÃºÂ¹Ã˜
 
-	GameState DoohLogic(Player* );								 //»ú¹ØµÄÂß¼­µÄÍ³Ò»µ÷ÓÃ
+	GameState DoohLogic(Player* );								 //Â»ÃºÂ¹Ã˜ÂµÃ„Ã‚ÃŸÂ¼Â­ÂµÃ„ÃÂ³Ã’Â»ÂµÃ·Ã“Ãƒ
 
-	void DoohRender();										 //»ú¹ØµÄäÖÈ¾µÄÍ³Ò»µ÷ÓÃ
+	void DoohRender();										 //Â»ÃºÂ¹Ã˜ÂµÃ„Ã¤Ã–ÃˆÂ¾ÂµÃ„ÃÂ³Ã’Â»ÂµÃ·Ã“Ãƒ
 
 private :
-	Doohickey* doohs[10];											//´æ·Å»ú¹ØÖ¸ÕëµÄÊı×é
-	int DoohickeyQuantity;											//»ú¹ØµÄÊıÁ¿
-	DoohSpecies DimenMap[MAPPOINTQUANTITY_X * MAPPOINTQUANTITY_Y];	//Î¬¶ÈµØÍ¼
+	Doohickey* doohs[10];											//Â´Ã¦Â·Ã…Â»ÃºÂ¹Ã˜Ã–Â¸Ã•Ã«ÂµÃ„ÃŠÃ½Ã—Ã©
+	int DoohickeyQuantity;											//Â»ÃºÂ¹Ã˜ÂµÃ„ÃŠÃ½ÃÂ¿
+	DoohSpecies DimenMap[MAPPOINTQUANTITY_X * MAPPOINTQUANTITY_Y];	//ÃÂ¬Â¶ÃˆÂµÃ˜ÃÂ¼
 };
 
 #endif

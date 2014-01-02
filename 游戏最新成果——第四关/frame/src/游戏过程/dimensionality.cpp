@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·¹ý³Ì\\Dimensionality.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆè¿‡ç¨‹\\Dimensionality.h"
 
 Dimensionality :: Dimensionality() 
 	: DoohickeyQuantity(0)
@@ -52,9 +52,9 @@ void Dimensionality :: AddDooh(string species, float x, float y)
 	else if(species == "TORTOISE")
 		doohs[DoohickeyQuantity++] = new Tortoise(x, y);
 
-	//µÈµÈµÈµÈ¡­¡­¡­¡­¡­¡­ÕâÀïÊÇºÜ¶àºÜ¶àµÄ»ú¹Ø
+	//ÂµÃˆÂµÃˆÂµÃˆÂµÃˆÂ¡Â­Â¡Â­Â¡Â­Â¡Â­Â¡Â­Â¡Â­Ã•Ã¢Ã€Ã¯ÃŠÃ‡ÂºÃœÂ¶Ã ÂºÃœÂ¶Ã ÂµÃ„Â»ÃºÂ¹Ã˜
 
-	//ÂíÉÏÐÞ¸ÄÎ¬¶ÈÏÂµÄµØÍ¼
+	//Ã‚Ã­Ã‰ÃÃÃžÂ¸Ã„ÃŽÂ¬Â¶ÃˆÃÃ‚ÂµÃ„ÂµÃ˜ÃÂ¼
 	doohs[DoohickeyQuantity - 1] -> ToMapCal(DimenMap);
 }
 
@@ -73,7 +73,7 @@ GameState Dimensionality :: DoohLogic(Player* thePlayer)
 	int index = 0;
 	while(index < DoohickeyQuantity)
 	{
-		//Èç¹û»ú¹ØÈÔÈ»ÔÚÔË×ª²¢ÇÒ²»×ãÒÔÊ¹±¾¹Ø½áÊø£¬Ôò¼ÌÐøÑ­»·
+		//ÃˆÃ§Â¹Ã»Â»ÃºÂ¹Ã˜ÃˆÃ”ÃˆÂ»Ã”ÃšÃ”Ã‹Ã—ÂªÂ²Â¢Ã‡Ã’Â²Â»Ã—Ã£Ã’Ã”ÃŠÂ¹Â±Â¾Â¹Ã˜Â½Ã¡ÃŠÃ¸Â£Â¬Ã”Ã²Â¼ÃŒÃÃ¸Ã‘Â­Â»Â·
 		if(doohs[index] && doohs[index] -> getState() != DONE)
 		{
 			GameState gs = doohs[index] -> logic(thePlayer, DimenMap);

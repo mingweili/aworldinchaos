@@ -1,4 +1,4 @@
-#ifndef RESOURCEMANAGER_H
+ï»¿#ifndef RESOURCEMANAGER_H
 #define RESOURCEMANAGER_H
 
 #include "hge.h"
@@ -10,23 +10,23 @@ class ResourceManager
 {
 public :
 
-	static hgeResourceManager* ResourceManagerPtr;                      //×ÊÔ´¹ÜÀíÆ÷µÄÖ¸Õë
+	static hgeResourceManager* ResourceManagerPtr;                      //èµ„æºç®¡ç†Ã†Ã·ÂµÃ„Ã–Â¸Ã•Ã«
 
-	static HEFFECT getEffect( const char* );                            //È¡µÃÉùÒôµÄĞ§¹û¾ä±ú
+	static HEFFECT getEffect( const char* );                            //ÃˆÂ¡ÂµÃƒÃ‰Ã¹Ã’Ã´ÂµÃ„ÃÂ§Â¹Ã»Â¾Ã¤Â±Ãº
 
-	static HTEXTURE getTexture( const char* );						    //È¡µÃÎÆÀí¾ä±ú
+	static HTEXTURE getTexture( const char* );						    //ÃˆÂ¡ÂµÃƒÃÃ†Ã€Ã­Â¾Ã¤Â±Ãº
 
-	static HMUSIC getMusic( const char* );							    //È¡µÃÒôÀÖ¾ä±ú
+	static HMUSIC getMusic( const char* );							    //ÃˆÂ¡ÂµÃƒÃ’Ã´Ã€Ã–Â¾Ã¤Â±Ãº
 
-	static HSTREAM getStream( const char* );                            //È¡µÃÒôÆµÁ÷¾ä±ú
+	static HSTREAM getStream( const char* );                            //ÃˆÂ¡ÂµÃƒÃ’Ã´Ã†ÂµÃÃ·Â¾Ã¤Â±Ãº
 
-	static hgeSprite* getSpritePtr( const char* );					    //È¡µÃ¾«ÁéÖ¸Õë
+	static hgeSprite* getSpritePtr( const char* );					    //ÃˆÂ¡ÂµÃƒÂ¾Â«ÃÃ©Ã–Â¸Ã•Ã«
 
-	static hgeFont* getFont( const char* );						        //È¡µÃ×ÖÌåÖ¸Õë
+	static hgeFont* getFont( const char* );						        //ÃˆÂ¡ÂµÃƒÃ—Ã–ÃŒÃ¥Ã–Â¸Ã•Ã«
 
-	static hgeParticleSystem* getParticleSystemPtr( const char* ) ;     //È¡µÃÁ£×ÓÏµÍ³Ö¸Õë
+	static hgeParticleSystem* getParticleSystemPtr( const char* ) ;     //ÃˆÂ¡ÂµÃƒÃÂ£Ã—Ã“ÃÂµÃÂ³Ã–Â¸Ã•Ã«
 
-	static hgeAnimation* getAnimation( const char* );                   //È¡µÃ¶¯»­µÄÖ¸Õë
+	static hgeAnimation* getAnimation( const char* );                   //ÃˆÂ¡ÂµÃƒÂ¶Â¯Â»Â­ÂµÃ„Ã–Â¸Ã•Ã«
 };
 
 

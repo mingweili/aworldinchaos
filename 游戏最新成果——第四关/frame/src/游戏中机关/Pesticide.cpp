@@ -1,4 +1,4 @@
-#include "..\\..\\include\\ÓÎÏ·ÖÐ»ú¹Ø\\Pesticide.h"
+ï»¿#include "..\\..\\include\\æ¸¸æˆä¸­æœºå…³\\Pesticide.h"
 
 Pesticide :: Pesticide(float _x, float _y)
 {
@@ -28,7 +28,7 @@ void Pesticide :: ToMapCal(DoohSpecies* map)
 
 GameState Pesticide :: logic(Player* player, DoohSpecies* map)
 {
-	//ÅÐ¶ÏÍæ¼ÒÊÇ·ñÄÃµ½ÁËÉ±³æ¼Á
+	//Ã…ÃÂ¶ÃÃÃ¦Â¼Ã’ÃŠÃ‡Â·Ã±Ã„ÃƒÂµÂ½ÃÃ‹Ã‰Â±Â³Ã¦Â¼Ã
 	float player_x = player->getX();
 	float player_y = player->getY();
 	if(map[(int)(player_x + MAPPOINTQUANTITY_X * player_y)] == PESTICIDE)

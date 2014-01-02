@@ -1,11 +1,11 @@
-#ifndef PROPERTY_H
+ï»¿#ifndef PROPERTY_H
 #define PROPERTY_H
 
-#include "..\\ÎïÀí¼ÆËã\\MapCal.h"
+#include "..\\ç‰©ç†è®¡ç®—\\MapCal.h"
 
 using namespace std;
 
-//Íæ¼ÒµÄµÀ¾ß»ùÀà
+//ÃÃ¦Â¼Ã’ÂµÃ„ÂµÃ€Â¾ÃŸÂ»Ã¹Ã€Ã 
 class Property
 {
 public :

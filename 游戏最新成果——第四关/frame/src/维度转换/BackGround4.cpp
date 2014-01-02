@@ -1,4 +1,4 @@
-#include "..\\..\\include\\Î¬¶È×ª»»\\BackGround4.h"
+ï»¿#include "..\\..\\include\\ç»´åº¦è½¬æ¢\\BackGround4.h"
 
 BackGround4::BackGround4(HGE *hge, int level)
 : BackGround(hge), currentState(true), currentPicNum(1)
@@ -143,7 +143,7 @@ void BackGround4::RenderPic()
 
 	float dt = 0.0005;
 
-	//Ïò×óÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²Ã—Ã³Ã’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
 	if(LIFT)
 	{
 		currentState = false;
@@ -171,7 +171,7 @@ void BackGround4::RenderPic()
 		renderx2 = &(sprStrct[sprNow->right].sprx); rendery2 = &(sprStrct[sprNow->right].spry);
 	}
 
-	//ÏòÓÒÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²Ã“Ã’Ã’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
 	if(RIGHT)
 	{
 		currentState = false;
@@ -201,7 +201,7 @@ void BackGround4::RenderPic()
 		renderx2 = &(sprStrct[sprNow->lift].sprx); rendery2 = &(sprStrct[sprNow->lift].spry);
 	}
 
-	//ÏòÉÏÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²Ã‰ÃÃ’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
     if(UP)
 	{
 		currentState = false;
@@ -230,7 +230,7 @@ void BackGround4::RenderPic()
 		rendery2 = &(sprStrct[sprNow->down].spry);
 	}
 
-	//ÏòÏÂÒÆ¶¯µÄÇé¿ö
+	//ÃÃ²ÃÃ‚Ã’Ã†Â¶Â¯ÂµÃ„Ã‡Ã©Â¿Ã¶
 	if(DOWN)
 	{
 		currentState = false;
